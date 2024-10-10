@@ -1,10 +1,48 @@
-body{
-    
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
 }
 
-header{
-    background-color: black;
-    display: flex;
-    justify-content: end;
-    width: 100%;
+header {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container1 {
+  display: flex;
+}
+
+.item {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.icon{
+    width: 30px;
+    height: auto;
+}
+
+.item:first-child{
+    width: 60%;
+}
+
+.item:last-child{
+    justify-content: flex-start;
+    padding-left: 2%;
 }
