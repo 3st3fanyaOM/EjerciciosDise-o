@@ -2,6 +2,8 @@
 /*gracias por no dificultar mucho la búsqueda de la fuente*/
 body {
   margin: 0;
+  padding: 0;
+  bottom: 0;
   font-family: "Khand", sans-serif;
   font-size: 1rem;
 }
@@ -27,7 +29,7 @@ header img {
 .item {
   color: black;
   font-size: 2rem;
-  /* font-weight: bold; */
+  font-weight: bold;
   width: 20%;
   display: flex;
   align-items: flex-end;
@@ -55,6 +57,7 @@ header img {
 
 .item2 {
   width: 23%;
+  padding: 5px;
 }
 
 .item2 h3 {
@@ -63,4 +66,24 @@ header img {
 
 .item2:first-child .item2:first-child {
   width: 15%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+}
+footer div {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  display: flex;
+  align-items: center;
+  width: 10%;
 }
