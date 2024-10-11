@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
-/*gracias por no dificultar mucho la búsqueda de la fuente*/
 body {
   margin: 0;
-  padding: 0;
-  bottom: 0;
   font-family: "Khand", sans-serif;
   font-size: 1rem;
 }
@@ -19,6 +16,7 @@ header {
 header img {
   max-width: 100%;
   height: auto;
+  padding-right: 10px;
 }
 
 .container1 {
@@ -43,6 +41,7 @@ header img {
 
 .item:first-child {
   width: 60%;
+  padding-left: 5%;
 }
 
 .item:last-child {
@@ -61,7 +60,7 @@ header img {
 }
 
 .item2 h3 {
-  color: rgb(45, 153, 156);
+  color: rgb(68, 186, 190);
 }
 
 .item2:first-child .item2:first-child {
@@ -69,9 +68,11 @@ header img {
 }
 
 footer {
-  position: relative;
+  /*pié*/
+  width: 100%;
   bottom: 0;
   display: flex;
+  position: fixed;
 }
 footer div {
   width: 25%;
