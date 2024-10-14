@@ -83,6 +83,22 @@ footer div {
   align-items: center;
 }
 
+.footer.face {
+  background-color: rgb(66 103 178);
+}
+
+.footer.whats {
+  background-color: rgb(37 211 102);
+}
+
+.footer.twitter {
+  background-color: rgb(29 161 242);
+}
+
+.footer.plus {
+  background-color: rgb(211, 63, 63);
+}
+
 footer img {
   display: flex;
   align-items: center;
