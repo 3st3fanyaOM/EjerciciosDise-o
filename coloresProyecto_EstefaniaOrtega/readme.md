@@ -2,9 +2,15 @@
 
 # Diseño de Interfaces Web
 
-## Autor: Estefania Ortega Muñoz
+## Autor: Estefanía Ortega Muñoz
 
-### El color es una herramienta muy útil para crear una identidad de marca y desencadenar emociones específicas en los usuarios. He elegido colores blanco y negro por el contraste que hacen, son colores simples, dan claridad a la aplicación y la hace legible para el usuario, el color blanco en concreto implica limpieza y transparencia, después he agregado el color azul por que es un color que transmite confianza y compromiso que es el objetivo de la aplicación. Los tonos azules seran para fondo de página y el blanco y negro para fuentes y botones.
+### El color es una herramienta fundamental para crear una identidad de marca y desencadenar emociones específicas en los usuarios. He elegido los colores blanco y negro por el contraste que ofrecen. Son colores simples que aportan claridad a la aplicación y la hacen legible para el usuario. El color blanco, en particular, implica limpieza y transparencia. Además, he agregado el color azul porque transmite confianza y compromiso, que es el objetivo de la aplicación. Los tonos azules se utilizarán para el fondo de la página, mientras que el blanco y negro se emplearán para las fuentes y los botones.
+
+## Fondo: Azul claro
+
+## Fuente: Negro
+
+## Botones: Blanco y azul
 
 ![Captura ejemplo colores](Captura.JPG)
 
