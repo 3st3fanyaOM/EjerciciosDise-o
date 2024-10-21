@@ -14,7 +14,28 @@ h1 {
 }
 .item {
   display: flex;
-}
-.icon {
+  flex-direction: column;
   align-items: center;
+}
+
+/*responsive*/
+@media (max-width: 475px) {
+  /*móvil*/
+  .container {
+    flex-wrap: wrap;
+  }
+  .item:last-child {
+    order: -1;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 1024px) {
+  /*tablet*/
+  .item:last-child {
+    order: -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*desktop*/
 }
