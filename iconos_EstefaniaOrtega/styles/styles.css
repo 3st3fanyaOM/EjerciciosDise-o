@@ -27,12 +27,20 @@ h1 {
   .item:last-child {
     order: -1;
   }
+  .item:nth-child(){
+    background-color: rgb(190, 181, 181);
+  }
 }
 
 @media (min-width: 475px) and (max-width: 1024px) {
   /*tablet*/
   .item:last-child {
     order: -1;
+  }
+  .item:nth-child() {
+    border: solid 1px black;
+    display:flex;
+    flex-direction: row;
   }
 }
 
