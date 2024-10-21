@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "tipoApple";
+  src: url(../fonts/sf-pro-display_regular.woff2) format("woff2"),
+    url(../fonts/SFProDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+body {
+  font-family: "tipoApple";
+}
+p {
+  font-family: "Roboto";
+}
