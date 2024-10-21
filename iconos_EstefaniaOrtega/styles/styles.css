@@ -2,14 +2,19 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-.container{
-    display: flex;
+.container {
+  display: flex;
+  justify-content: space-around;
 }
-
+.item {
+  display: flex;
+}
+.icon {
+  align-items: center;
+}
