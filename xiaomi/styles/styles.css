@@ -1,0 +1,14 @@
+body{
+    font-family: 'source-sans-pro';
+}
+
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url(/xiaomi/fonts/source-sans-pro/SourceSansPro-Regular.ttf);
+}
+.banner{
+    z-index: 1;
+    position: fixed;
+    background-color: #000000;
+    color: #ffffff;
+}
