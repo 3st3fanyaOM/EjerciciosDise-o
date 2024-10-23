@@ -1,14 +1,36 @@
-body{
-    font-family: 'source-sans-pro';
+body {
+  font-family: "source-sans-pro";
+  margin: 0 0;
 }
 
 @font-face {
-    font-family: 'source-sans-pro';
-    src: url(/xiaomi/fonts/source-sans-pro/SourceSansPro-Regular.ttf);
+  font-family: "source-sans-pro";
+  src: url(/xiaomi/fonts/source-sans-pro/SourceSansPro-Regular.ttf);
 }
-.banner{
-    z-index: 1;
-    position: fixed;
-    background-color: #000000;
-    color: #ffffff;
+.banner {
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 1;
+  position: sticky;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0.5%;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+}
+.menuIzquierdo {
+}
+.menuDerecho {
 }
