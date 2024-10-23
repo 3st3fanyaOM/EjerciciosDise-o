@@ -1,6 +1,7 @@
 body {
   font-family: "source-sans-pro";
-  margin: 0 0;
+  margin: 0;
+  /* font-size: 1vw; */
 }
 
 @font-face {
@@ -18,19 +19,29 @@ body {
 }
 ul {
   list-style-type: none;
+  display: flex;
 }
-
 a {
   text-decoration: none;
+  color: #000000;
 }
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
+.icon{
+    width: 20px;
+}
 .nav {
+    display: flex;
+    justify-content: space-around;
 }
 .menuIzquierdo {
+    display: flex;
+    gap: 1rem;
 }
 .menuDerecho {
+    display: flex;
+    gap: 1rem;
 }
