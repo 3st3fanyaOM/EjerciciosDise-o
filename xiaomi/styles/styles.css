@@ -40,7 +40,7 @@ header {
 .nav {
   display: flex;
   justify-content: space-around;
-  padding top: ;
+  /* padding top: ; */
 }
 .menuIzquierdo {
   display: flex;
@@ -95,4 +95,42 @@ header {
   gap: 1rem;
   width: 100%;
   align-items: center;
+}
+
+.slider{
+  display: flex;
+  width: 10px;
+}
+
+.pro{
+  display: flex;
+  width:85%;
+}
+/* .img2{
+  width: 100px;
+} */
+
+footer{
+  display: flex;
+  background-color: #000000;
+  color:#ffffff;
+}
+
+footer a {
+color: #ffffff;
+font-weight: 100;
+}
+
+.mail input{
+  border-radius: 10px;
+  height: 30px;
+  border: 0.5px solid #ffffff;
+  background-color: #000000;
+  padding: 3px;
+}
+.googleplay{
+  display: flex;
+}
+.icon2{
+  height: 20px;
 }
