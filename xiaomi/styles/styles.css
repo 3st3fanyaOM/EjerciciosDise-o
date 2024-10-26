@@ -11,7 +11,10 @@ body {
 .banner {
   background-color: #000000;
   color: #ffffff;
-  /* z-index: 1; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   position: sticky;
   text-align: center;
   font-size: 0.9em;
@@ -19,6 +22,7 @@ body {
   word-spacing: 5px;
   letter-spacing: 0.5px;
 }
+
 ul {
   list-style-type: none;
   display: flex;
@@ -119,27 +123,27 @@ header {
   padding: 0;
   height: 50px;
 }
-.nav2{
+.nav2 {
   display: flex;
   justify-content: center;
-  font-weight:600;
+  font-weight: 600;
   letter-spacing: 0.1cap;
   font-size: 2 rem;
   gap: 3rem;
   padding: 10px;
   margin: 10px;
 }
-.menu2naranja a{
+.menu2naranja a {
   color: #de953b;
   display: flex;
 }
-.bar{
+.bar {
   display: flex;
   align-items: end;
   border-radius: 5px;
   height: 2px;
   margin-top: 15px;
-  background-color:#de953b ;
+  background-color: #de953b;
 }
 .pro {
   background-color: #f2f3f7;
@@ -147,18 +151,25 @@ header {
   width: 85%;
   padding: 1%;
   gap: 10rem;
-} 
+  margin: auto;
+  border-width: 5px;
+  border-color: #ffffff;
+}
 .img2 {
   width: 500px;
+}
+.pro-texto {
+  text-align: center;
 }
 
 footer {
   display: flex;
   background-color: #000000;
   color: #ffffff;
-  gap: 1rem;
+  padding: 0;
+  gap: 5rem;
   line-height: 2.5cap;
-  width: calc(100% - 2rem / 5);
+  justify-content: space-between;
 }
 
 footer a {
