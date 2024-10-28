@@ -14,15 +14,27 @@ body {
   background-color: #000000;
   color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   position: sticky;
   text-align: center;
-  font-size: 0.9em;
-  padding: 0.3%;
-  word-spacing: 5px;
+  font-size: 1em;
+  padding-left: 25%;
+  padding-right: 1%;
+  word-spacing: 4px;
   letter-spacing: 0.5px;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.1em;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 2rem);
 }
 
 ul {
@@ -32,16 +44,6 @@ ul {
 a {
   text-decoration: none;
   color: #000000;
-}
-
-/*header*/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  width: calc(100% - 2rem);
 }
 
 .icon {
@@ -56,7 +58,7 @@ header {
 .menuIzquierdo,
 .menuDerecho {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /*seccion 1*/
@@ -95,7 +97,9 @@ header {
 
 .item:nth-child(2) {
   width: 40%;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .item:last-child {
@@ -105,21 +109,33 @@ header {
 
 .botones {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   width: 100%;
   align-items: center;
 }
 
 /*slider*/
 .slider {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
+  justify-content: space-between;
   height: 50px;
 }
 
 .bars {
   display: flex;
+}
+
+.barx {
+  width: 7%;
+  padding: 0.1%;
+  display: flex;
+  align-self: flex-end;
+  border-radius: 10px;
+  height: 3px;
+  margin: 15px;
+  background: linear-gradient(to right, #de953b 30%, #e0dcd8 70%);
 }
 
 .bars:first-child,
@@ -129,7 +145,7 @@ header {
 
 /*barritas*/
 .bar1 {
-  width: 9%;
+  width: 7%;
   padding: 0.1%;
   display: flex;
   align-self: flex-end;
@@ -152,15 +168,13 @@ header {
 
 /*seccion2*/
 .seccion2 {
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .titulo {
-  background-color: #f2f3f7;
   text-align: center;
   margin: 0;
   padding: 0;
-  height: 50px;
+  height: 80px;
+  width: 100%;
 }
 
 .nav2 {
@@ -172,6 +186,10 @@ header {
   gap: 3rem;
   padding: 10px;
   margin: 10px;
+}
+
+.menu2 {
+  color: #353232;
 }
 
 .menu2naranja a {
@@ -191,6 +209,7 @@ header {
 .pro {
   background-color: #f2f3f7;
   display: flex;
+  justify-content: space-between;
   width: 85%;
   padding: 1%;
   gap: 10rem;
@@ -200,11 +219,12 @@ header {
 }
 
 .img2 {
-  width: 500px;
+  width: 700px;
 }
 
 .pro-texto {
   text-align: center;
+  width: 50%;
 }
 
 /*footer intenso*/
@@ -236,6 +256,7 @@ footer p {
   border: 0.3px solid #aea8a8;
   background-color: #1f1e1e;
   padding: 1rem;
+  width: 95%;
 }
 
 .googleplay {

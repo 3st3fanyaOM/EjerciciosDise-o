@@ -1,0 +1,45 @@
+*{/* a todo el html*/
+
+}
+
+body{
+    font-size: 2em;
+    margin: 0;
+    padding: 5;
+}
+
+.parrafo{
+    color: red;
+    /* font-size: 3rem; */
+}
+
+#seccion1{/*id*/
+    color: yellow;
+    /* font-size: 3rem; */
+}
+
+.parrafo,
+#seccion1{
+    font-size: 3rem;
+}
+
+body .primerdiv .segundodiv p{/*de esta forma tiene prioridad*/
+
+    font-weight: normal;
+}
+
+.segundodiv p{
+    font-weight: bold !important; /*asi le doy prioridad--antes del ;*/
+}
+
+.primerdiv > p{/*hijos p de primerdiv*/
+
+}
+
+.primerdiv + p{/*primer p detras primerdiv*/
+
+}
+
+.primerdiv ~ p{/*todos los hermanos de primerdiv*/
+
+}
