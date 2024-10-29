@@ -1,0 +1,33 @@
+body {
+  font-size: 2em;
+  margin: 0;
+  padding: 5%;
+}
+
+.container {
+  display: flex;
+}
+
+.container::before {
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  content: "";
+  background-image: url(https://img.icons8.com/?size=100&id=cvXpB2FlzuLp&format=png&color=000000);
+  display: inline-block;
+}
+
+.container:focus-within::before {
+  background-image: url(https://img.icons8.com/?size=100&id=eY0uAA2Idt8H&format=png&color=000000);
+}
+
+input[type="password"] {
+  display: flex;
+  align-items: flex-start;
+  border: 0px;
+  margin-top: 0;
+  font-size: 2rem;
+  height: 90%;
+  width: calc(85%-30px);
+  outline: none;
+}

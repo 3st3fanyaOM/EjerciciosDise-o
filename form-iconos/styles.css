@@ -1,0 +1,49 @@
+body {
+  font-size: 2em;
+  margin: 0;
+  padding: 5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  margin-top: 5%;
+} */
+
+input[type="text"]:focus {
+  /*cuidado con el espacio entre input y [*/
+  /* border: 5px solid red; */
+  outline: none;
+}
+
+.campousuario::before {
+  /* content: "*"; */
+  width: 5%;
+  background-image: url(/form-iconos/icons8-usuario-24.png);
+  display: inline-block; /*el ancho del contenido*/
+}
+
+.campousuario::after {
+  /* content: "*"; */
+  width: 5%;
+}
+
+.campousuario {
+  border: 1px solid;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  margin-top: 0;
+  font-size: 2rem;
+  height: 100%;
+  width: calc(85%-30px);
+}
