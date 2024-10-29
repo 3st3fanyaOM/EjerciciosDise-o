@@ -1,9 +1,18 @@
 body {
-  font-size: 2em;
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 5%;
 }
 
+.principal {
+  margin: 10%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
 .container {
   display: flex;
 }
@@ -20,14 +29,24 @@ body {
 .container:focus-within::before {
   background-image: url(https://img.icons8.com/?size=100&id=eY0uAA2Idt8H&format=png&color=000000);
 }
-
+/*contraseña*/
 input[type="password"] {
-  display: flex;
-  align-items: flex-start;
   border: 0px;
   margin-top: 0;
-  font-size: 2rem;
-  height: 90%;
+  font-size: 1em;
   width: calc(85%-30px);
   outline: none;
+}
+/*usuario*/
+input[type="text"] {
+  border: 1.5px solid grey;
+  padding: 9px;
+  font-size: 1em;
+  width: calc(85%-30px);
+  height: 5%;
+}
+/*estilo botón*/
+input[type="submit"] {
+  border: 2px solid brown;
+  background-color: rgb(238, 158, 158);
 }
