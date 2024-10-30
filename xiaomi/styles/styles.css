@@ -104,6 +104,10 @@ a {
   line-height: 0.5em;
 }
 
+.item {
+  display: flex;
+}
+
 .item:last-child {
   justify-content: flex-end;
   width: 15%;
@@ -240,14 +244,17 @@ a {
 footer {
   background-color: #1f1e1e;
   color: #aea8a8;
-
+  display: flex;
+  flex-direction: column;
 }
 
-.topfooter{
+.topfooter {
   display: flex;
+  flex-wrap: nowrap;
   padding: 1.5rem;
   line-height: 2;
   justify-content: space-between;
+  width: 100%;
 }
 
 .ultimo {
@@ -282,11 +289,11 @@ footer p {
 }
 
 .rrss {
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .rrss img {
-  width: 30px;
+  width: 40px;
 }
 
 .qr {
@@ -297,12 +304,13 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.contenido{
+.contenido {
   display: flex;
 }
 
-.bottomfooter{
+
+.bottomfooter {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-
