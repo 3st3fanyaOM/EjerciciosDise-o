@@ -255,8 +255,7 @@ footer {
 }
 
 .ultimo {
-  width: 35%;
-  padding: 10px;
+  width: 30%;
 }
 
 footer a {
@@ -279,16 +278,17 @@ footer p {
   background-color: #1f1e1e;
   padding: 1em;
   font-size: 1.2em;
-  width: 78%;
+  width: 77%;
   margin: 5px;
 }
 
 .icon2 {
-  height: 20px;
+  height: 22px;
 }
 
 .rrss img {
-  width: 50px;
+  width: 45px;
+  height: auto;
 }
 
 .qr {
@@ -299,7 +299,7 @@ footer p {
   display: flex;
   font-size: 0.7em;
   width: 80%;
-  height: 45%;
+  height: 40%;
   flex-direction: column;
 }
 
@@ -307,7 +307,8 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .contenido {
