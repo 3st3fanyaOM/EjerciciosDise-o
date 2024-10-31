@@ -182,7 +182,7 @@ a {
   text-align: center;
   font-size: 2.2rem;
   height: 80px;
-  width: 100%;
+  width: calc(100% - 4%);
 }
 
 .nav2 {
@@ -340,7 +340,7 @@ footer p {
 .hr {
   flex-grow: 1; /* Hace que el <hr> ocupe el espacio restante */
   border: none; /* Quita el borde predeterminado */
-  height: 2px; /* Ajusta el grosor de la línea */
+  height: 1.5px; /* Ajusta el grosor de la línea */
   background-color: #aea8a8; /* Color de la línea */
   margin: 0 10px; /* Espaciado horizontal */
 }
