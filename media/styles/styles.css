@@ -1,0 +1,55 @@
+.contenedor p {
+  font-size: 3rem;
+}
+
+@media print {
+  .contenedor p {
+    font-size: 1rem; /*aumentar fuente*/
+    display: none; /*quitar cosas */
+  }
+}
+
+.contenedor a {
+  /*estilo basico*/
+  font-size: 4rem;
+}
+
+.contenedor a:link {
+  /*sin visitar*/
+  color: pink;
+}
+
+.contenedor a:visited {
+  /*visitado*/
+  color: green;
+}
+
+.contenedor a:hover {
+  /*cursor por encima*/
+  color: blue;
+}
+
+.contenedor a:focus {
+  /*tabulado, si haces clic fuera se va*/
+  color: orange;
+}
+
+.contenedor a:active {
+  /*pulsado*/
+  color: brown;
+}
+
+.seccion2 {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%; /*si hay un margin bottom del elemt de arriba, se queda con el mayor
+   */
+}
+.seccion2:hover {
+  background-color: pink;
+  cursor: pointer; /*para decir que pasa algo ahí*/
+}
+
+.seccion2:active {
+  color: yellow;
+}
