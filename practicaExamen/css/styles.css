@@ -36,7 +36,7 @@ span {
 }
 
 form input,
-form p{
+form p {
   width: 100%;
   padding-bottom: 2%;
   font-weight: bold;
@@ -45,7 +45,9 @@ form p{
 
 .clave_contenedor {
   display: flex;
+  align-items: center;
   border-bottom: 1px solid #000000;
+  margin-bottom: 5%;
 }
 
 .clave_contenedor::after {
@@ -62,24 +64,23 @@ form p{
   border-bottom: 1px solid #000000;
   margin-top: 0;
   font-size: 1em;
+  font-weight: lighter;
   width: 100%;
   outline: none;
-  padding-bottom: 1em;
 }
 
 #contrasenia {
   border: none;
   margin-top: 0;
   font-size: 1em;
+  font-weight: lighter;
   width: 100%;
   outline: none;
-  padding-bottom: 1em;
 }
 
 a:link {
   color: #000000;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  font-weight:bold;
 }
 
 .icon {
@@ -112,13 +113,12 @@ a:link {
   .principal {
     display: flex;
     flex-direction: column;
-
   }
   .seccion2 {
     width: 80%;
     order: -1;
   }
-  .seccion1{
+  .seccion1 {
     width: 80%;
   }
 }
