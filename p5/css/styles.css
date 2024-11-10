@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1em;
+  height: 100vh;
+}
+
+.contenedorppal {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pestañas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.itemp1 {
+  background-color: #212530;
+  color: #ffffff;
+  font-size: 1.3em;
+  padding: 0.8em 1.5em;
+  height: 35px;
+  width: 50%;
+  text-align: center;
+}
+
+.itemp2 {
+  background-color: #575761;
+  color: #ffffff;
+  font-size: 1.3em;
+  padding: 0.8em 1.5em;
+  height: 35px;
+  width: 50%;
+  text-align: center;
+}
+
+.seleccionado {
+  margin-left: 20%;
+  width: 50%;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #646bb8;
+}
+
+.seccion {
+  width: 60%;
+  background-color: #212530;
+  color: #ffffff;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  font-size: 1em;
+}
+
+.seccion label {
+  margin-bottom: 2%;
+}
+.mail {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.olvidado {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.olvidado a {
+  color: #8096da;
+  text-decoration: underline;
+  font-size: 0.8em;
+  padding-top: 2px;
+  width: 45%;
+}
+
+.btn2 {
+  background-color: #53536f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 40px;
+  width: 50%;
+}
+
+.botonesfinal {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 30px;
+}
+
+.btn4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0;
+  border:none;
+  width: 70%;
+  height: 30px;
+  margin-bottom: 5%;
+}
+
+.btn5 {
+  background-color: #0A84DF;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0;
+  border:none;
+  width: 70%;
+  height: 30px;
+  margin-bottom: 10%;
+}
