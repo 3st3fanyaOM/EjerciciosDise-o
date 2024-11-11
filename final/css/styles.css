@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #f2f2f3;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  width: 80%;
+  margin: auto;
+}
+
+.item {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.blanco {
+  margin-top: 1.5em;
+  border-radius: 15px;
+  border: none;
+  background-color: #ffffff;
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+#rojo {
+  color: #ff0000;
+}
+
+#mail {
+  border-radius: 10px;
+  border: 0.5px solid grey;
+  height: 40px;
+  width: 90%;
+  font-family: "Roboto Condensed", sans-serif;
+  padding-left: 1%;
+}
+
+.contenedor_pwd {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 0.5px solid grey;
+  height: 40px;
+  width: 91%;
+  padding-right: 1%;
+  margin-bottom: 1.5em;
+}
+
+#password {
+  border: none;
+  margin-left: 2%;
+  font-family: "Roboto Condensed", sans-serif;
+  width: 90%;
+}
+
+.icon {
+  width: 30px;
+}
+
+.recordar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check {
+  display: flex;
+  gap: 1em;
+}
+
+a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.btn1 {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  width: 30%;
+  height: 50px;
+  margin: 6% 30%;
+  padding: 3% 4%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.divisor {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+
+.grande {
+  font-size: 2em;
+  margin-bottom: 0.1em;
+}
+
+.iconos {
+  width: 40px;
+  height: 40px;
+}
+
+.imagenes {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botones_final {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn2 {
+  margin-top: 1em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 50px;
+  padding: 1em;
+  gap: 1em;
+  display: flex;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.azul {
+  color: #0000ff;
+  font-weight: bold;
+}
