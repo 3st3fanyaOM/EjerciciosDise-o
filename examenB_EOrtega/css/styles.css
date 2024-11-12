@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: #f1f2f3;
+}
+
+.contenedor {
+  width: 63%;
+  background-color: #ffffff;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 2%;
+  padding-right: 1%; */
+}
+
+.cabecera {
+  display: none;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+  font-size: 0.7em;
+  margin-bottom: 1%;
+}
+
+.pestañas {
+  display: flex;
+  margin:0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.entrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #1450a0;
+  width: 50%;
+  height: 50px;
+}
+
+.entrar a {
+  color: black;
+}
+
+.nuevo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080;
+  border-bottom: 3px solid #f1f2f3;
+  color: #ffffff;
+  width: 50%;
+}
+
+.pequeña {
+  font-size: 0.8em;
+  padding-left: 1.3em;
+}
+
+.nuevo a {
+  color: #ffffff;
+}
+
+#mail,
+#password {
+  border-radius: 10px;
+  font-family: "Roboto Flex", sans-serif;
+  border: 1px solid #b3b1b1;
+  color: #808080;
+  padding: 0.8em;
+  width: 96%;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-left: 1.3em;
+}
+
+.btn {
+  background-color: #ffa500;
+  color: #ffffff;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: 1em;
+}
+
+.recuerdame {
+  display: flex;
+  margin-left: 1em;
+}
+
+.olvidado {
+  text-align: center;
+  color: #000000;
+  font-weight: normal;
+  padding-bottom: 1em;
+}
+
+.mensaje {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.img {
+  width: 60px;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000;
+  color: white;
+  font-size: 0.7em;
+}
+
+.parrafos {
+  color: grey;
+}
+
+.final {
+  display: flex;
+}
+
+.o {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-left: 1%;
+  color: #a7a3a3;
+}
+
+.linea {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0.7em;
+  gap: 3em;
+  width: 45%;
+  border-top: 0.8px solid #a7a3a3;
+}
+
+/*responsive*/
+@media (max-width: 625px) {
+  /*móvil*/
+
+  .cabecera {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contenedor {
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .mensaje {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer {
+    display: none;
+  }
+}
