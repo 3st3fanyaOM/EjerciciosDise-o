@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0 auto;
+  font-family: "Sour Gummy", sans-serif;
+}
+.contenedor {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 40% 60%;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  /* background-color: #355ecf; */
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  background-color: #e2cfc6;
+  color: #5c483f;
+  display: flex;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.categorias {
+  grid-column: 1/2;
+  grid-row: 2;
+  background-color: #91857f;
+}
+
+.productos {
+  grid-column: 2;
+  grid-row: 2;
+}
