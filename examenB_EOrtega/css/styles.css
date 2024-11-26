@@ -11,8 +11,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  /* padding-left: 2%;
-  padding-right: 1%; */
 }
 
 .cabecera {
@@ -156,7 +154,6 @@ a {
 /*responsive*/
 @media (max-width: 625px) {
   /*móvil*/
-
   .cabecera {
     display: flex;
     width: 100%;
@@ -164,10 +161,12 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+
   .contenedor {
     flex-wrap: wrap;
     width: 95%;
   }
+
   .mensaje {
     display: flex;
     justify-content: flex-end;
