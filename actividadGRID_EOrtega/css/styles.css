@@ -6,15 +6,13 @@ body {
 .contenedor {
   display: grid;
   width: 100%;
-  height: 100vh;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 15% 85%;
 }
 
 .logo {
   grid-column: 1/2;
   grid-row: 1/2;
-  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,8 +21,10 @@ body {
 }
 
 .logo img {
-  /* object-fit: contain; */
+  object-fit: cover;
   max-width: 100%;
+  vertical-align: middle;
+  margin: 0;
 }
 
 .menu {
@@ -37,8 +37,6 @@ body {
   gap: 1em;
   justify-content: flex-end;
   align-items: end;
-  padding-bottom: 1em;
-  padding-right: 1.5em;
 }
 
 a {
@@ -46,6 +44,10 @@ a {
   font-weight: bold;
   color: #5c483f;
   font-size: 1.2em;
+  cursor: cell;
+  padding-bottom: 2%;
+  padding-right: 1%;
+  cursor: url('img/icons8-macarrón-20.png')16 16, auto;
 }
 
 .categorias {
@@ -57,7 +59,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5em;
+  gap: 4em;
 }
 
 .productos {
@@ -65,6 +67,70 @@ a {
   grid-row: 2;
   background-color: #5c483f;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1em;
+  padding: 3em;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto {
+  width: 250px;
+  height: 130px;
+  padding-bottom: 2%;
+}
+
+.estrellas {
+  display: flex;
+  justify-content: center;
+}
+
+.estrellas img {
+  width: 25px;
+}
+
+h3 {
+  color: #e2cfc6;
+  padding-top: 1%;
+  margin: 2px;
+}
+
+.producto p {
+  margin: 2px;
+  color: #e2cfc6;
+}
+
+@media (max-width: 475px) {
+  .contenedor {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1;
+    padding: 3%;
+  }
+
+  .categorias {
+    display: none;
+  }
 }
