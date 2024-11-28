@@ -2,6 +2,7 @@
 body {
   margin: 0 auto;
   font-family: "Sour Gummy", sans-serif;
+  cursor: url("../img/icons8-cursor-25.png"), auto;
 }
 .contenedor {
   display: grid;
@@ -39,15 +40,18 @@ body {
   align-items: end;
 }
 
+.menu img{
+  width: 20px;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
   color: #5c483f;
   font-size: 1.2em;
-  cursor: cell;
   padding-bottom: 2%;
   padding-right: 1%;
-  cursor: url('img/icons8-macarrón-20.png')16 16, auto;
+  cursor: url("../img/icons8-cursor-25.png"), auto;
 }
 
 .categorias {
