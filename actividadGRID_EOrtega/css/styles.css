@@ -2,24 +2,30 @@
 body {
   margin: 0 auto;
   font-family: "Sour Gummy", sans-serif;
+  cursor: url("../img/icons8-cursor-25.png"), auto;
 }
 .contenedor {
   display: grid;
   width: 100%;
-  height: 100vh;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 15% 85%;
 }
 
 .logo {
   grid-column: 1/2;
   grid-row: 1/2;
-  /* background-color: #355ecf; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #846b5f;
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0;
 }
 
 .menu {
@@ -29,19 +35,106 @@ body {
   background-color: #e2cfc6;
   color: #5c483f;
   display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  align-items: end;
 }
 
-.menu li{
-    list-style-type: none;
+.menu img{
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5c483f;
+  font-size: 1.2em;
+  padding-bottom: 2%;
+  padding-right: 1%;
+  cursor: url("../img/icons8-cursor-25.png"), auto;
 }
 
 .categorias {
   grid-column: 1/2;
   grid-row: 2;
   background-color: #91857f;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
 }
 
 .productos {
   grid-column: 2;
   grid-row: 2;
+  background-color: #5c483f;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1em;
+  padding: 3em;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto {
+  width: 250px;
+  height: 130px;
+  padding-bottom: 2%;
+}
+
+.estrellas {
+  display: flex;
+  justify-content: center;
+}
+
+.estrellas img {
+  width: 25px;
+}
+
+h3 {
+  color: #e2cfc6;
+  padding-top: 1%;
+  margin: 2px;
+}
+
+.producto p {
+  margin: 2px;
+  color: #e2cfc6;
+}
+
+@media (max-width: 475px) {
+  .contenedor {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  .productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1;
+    padding: 3%;
+  }
+
+  .categorias {
+    display: none;
+  }
 }

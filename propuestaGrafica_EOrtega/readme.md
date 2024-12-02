@@ -23,7 +23,7 @@ En la parte inferior del cuerpo, a la derecha, hay una imagen que refuerza el pr
 
 Finalmente, en el pie de página, se han añadido enlaces a redes sociales y otros enlaces relevantes alineados a la derecha.
 
-![Versión desktop](../propuestaGrafica_EOrtega/desktop.jpg)
+![Versión desktop](./img/desktop.jpg)
 
 ### Versión móvil
 
@@ -37,4 +37,4 @@ Nombre de la empresa, eslógan e imagen indentificativa.
 
 He prescindido del pié de página, a cambio puse un pequeño banner con las redes sociales.
 
-![Versión móvil](../propuestaGrafica_EOrtega/movil.jpg)
+![Versión móvil](./img/movil.jpg)
