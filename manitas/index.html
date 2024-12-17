@@ -9,8 +9,12 @@
     <!--contenido de tu página-->
     <meta name="author" content="Estefania Ortega" />
     <!--autor-->
-    <link rel="shortcut icon" href="img/logo (2).png" type="image/x-icon" />
-    <!--favicon-->
+    <link
+      rel="shortcut icon floating"
+      href="img/logo (2).png"
+      type="image/x-icon floating"
+    />
+    <!--favicon floating-->
     <title>Manitas | Servicios del hogar</title>
     <!--hoja de estilos personalizados-->
     <link rel="stylesheet" href="css/styles.css" />
@@ -21,7 +25,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+<<<<<<< HEAD
     <!-- Iconos de Font Awesome-->
+=======
+    <!-- Icon floatingos de Font Awesome (Opcional para íconos sociales) -->
+>>>>>>> f2531a7d71c08058bef2c4db428cca80f750c488
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
@@ -40,7 +48,11 @@
         data-bs-toggle="dropdown"
         aria-label="Toggle theme (auto)"
       >
-        <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <svg
+          class="bi my-1 theme-icon floating-active"
+          width="1em"
+          height="1em"
+        >
           <use href="#circle-half"></use>
         </svg>
         <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
@@ -136,7 +148,7 @@
                 placeholder="Search..."
                 aria-label="Search"
               />
-              <a href="#"><i class="fas fa-search search-icon"></i></a>
+              <a href="#"><i class="fas fa-search search-icon floating"></i></a>
             </div>
           </form>
           <div class="text-end">
@@ -147,7 +159,59 @@
       </div>
     </header>
     <!--cuerpo de página-->
-    <main class="bg-dark text-white"></main>
+    <main class="bg-dark text-white">
+      <div class="servicios">
+        <!--tarjetas servicios-->
+        <div class="servicio-card">
+          <img
+            class="service-icon floating"
+            src="../manitas/img/icons8-fontanero-50.png"
+            alt=""
+          />
+          <h3>Fontanería</h3>
+          <p>Expertos en fontanería</p>
+          <p class="precio-servicio">Desde 25 € / Hora</p>
+          <div class="valoracion"></div>
+          <button class="info">Más información</button>
+        </div>
+        <div class="servicio-card">
+          <img
+            class="service-icon floating"
+            src="../manitas/img/icons8-enchufe-94.png"
+            alt=""
+          />
+          <h3>Electricidad</h3>
+          <p>Electricistas con chispa</p>
+          <p class="precio-servicio">Desde 35 € / Hora</p>
+          <div class="valoracion"></div>
+          <button class="info">Más información</button>
+        </div>
+        <div class="servicio-card">
+          <img
+            class="service-icon floating"
+            src="../manitas/img/icons8-martillo-50.png"
+            alt=""
+          />
+          <h3>Carpintería</h3>
+          <p>Trabajos de madera</p>
+          <p class="precio-servicio">Desde 55 € / Hora</p>
+          <div class="valoracion"></div>
+          <button class="info">Más información</button>
+        </div>
+        <div class="servicio-card">
+          <img
+            class="service-icon floating"
+            src="../manitas/img/icons8-paleta-50.png"
+            alt=""
+          />
+          <h3>Albañilería</h3>
+          <p>Todo tipo de reformas</p>
+          <p class="precio-servicio">Desde 35 € / Hora</p>
+          <div class="valoracion"></div>
+          <button class="info">Más información</button>
+        </div>
+      </div>
+    </main>
     <!-- Pie de página -->
     <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container text-center text-md-start">
