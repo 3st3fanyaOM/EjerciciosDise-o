@@ -12,6 +12,7 @@ header {
   align-items: center;
   justify-content: end;
 }
+
 .titulo {
   text-align: center;
   font-size: 2em;
@@ -32,6 +33,7 @@ header {
 .contenedor {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 3em;
 }
 
@@ -40,7 +42,7 @@ header {
   width: 263px;
 }
 .producto {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .btn {
