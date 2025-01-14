@@ -1,6 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 
-body{
-    font-family: "Open Sans", serif;
-    font-weight: 400;
+body {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  background-color: #dfdfdf;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.item1 {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+.item2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.item3 {
+  display: flex;
+}
+
+.btn {
+  width: 75%;
+  background-color: #1b74e4;
+  color: #fff;
+  border-radius: 30px;
+  border-style: none;
+  padding: 1em;
+  margin-bottom: 2%;
+  font-size: 1em;
 }
