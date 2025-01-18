@@ -6,13 +6,13 @@ body {
   background-color: #dfdfdf;
 }
 
-.title {
+.title1 {
   font-size: 2em;
   text-align: center;
   padding: 1em;
 }
 
-.container {
+.acceso {
   width: 75%;
   margin: auto;
   background-color: #f2f2f2;
@@ -47,4 +47,84 @@ body {
   padding: 1em;
   margin-bottom: 2%;
   font-size: 1em;
+}
+
+.login{
+  width: 55%;
+  margin: auto;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 2em;
+  gap: 1em;
+}
+
+#usu, #pwd{
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 1em;
+border: 2px solid #dfdfdf;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 4%;
+color: #f2f2f2;
+}
+
+#usu::placeholder, #pwd::placeholder{
+  color: #b1b1b1;
+}
+
+.icono{
+  max-width: 1em;
+}
+
+.login a{
+  color: #1b74e4;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+span{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.olvidado{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 0.4em;
+  margin-bottom: 4%;
+}
+
+#btn2{
+  border-radius: 20px;
+  padding: 0.8em;
+  width: 34%;
+  background-color: #b1b1b1;
+  border: none;
+  color: #f2f2f2;
+}
+
+#btns{
+  width: 100%;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+
+}
+#btns p{
+  text-align: center;
+  padding: 1.5em;
+}
+
+#fb{
+width: 90%;
+box-sizing: border-box;
+border-radius: 5px;
+border: none;
+padding: 0.8em;
+background-color: #1b74e4;
+color: #dfdfdf;
 }

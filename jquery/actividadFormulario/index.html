@@ -7,22 +7,51 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <p class="title">Acceso</p>
-    <div class="container">
+    <p class="title1">Acceso</p>
+    <div class="login" style="display: none">
+      <input
+        id="usu"
+        type="text"
+        placeholder="Correo electrónico o nombre de acceso"
+      /><br />
+      <input type="password" name="" id="pwd" placeholder="Contraseña" /><br />
+      <div class="olvidado">
+        <span>
+          <img
+            class="icono"
+            src="./img/icons8-chevron-derecha-en-círculo-30.png"
+            alt="icono"
+          /><a href="#">¿Has olvidado la contraseña?</a>
+        </span>
+        <button id="btn2">Iniciar sesión</button>
+      </div>
+
+      <div id="btns">
+        <p>Inicia sesión con</p>
+        <button id="fb">Facebook</button>
+        <button id="ggl">Google</button>
+      </div>
+    </div>
+    <div class="acceso">
       <div class="item1">
         <p>Inicia sesión con tu cuenta</p>
         <p>o crea una cuenta nueva.</p>
       </div>
       <div class="item3">
         <div class="item2">
-            <p>¿Tienes ya una cuenta?</p>
-            <button class="btn">Iniciar sesión</button>
-          </div>
-          <div class="item2">
-            <p>¿No tienes cuenta?</p>
-            <button class="btn">Crear una cuenta</button>
-          </div>
+          <p>¿Tienes ya una cuenta?</p>
+          <button class="btn">Iniciar sesión</button>
+        </div>
+        <div class="item2">
+          <p>¿No tienes cuenta?</p>
+          <button class="btn">Crear una cuenta</button>
+        </div>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
