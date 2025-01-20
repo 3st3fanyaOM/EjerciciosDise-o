@@ -38,7 +38,7 @@ body {
   display: flex;
 }
 
-.btn {
+.btnIniciar, .btnCrear {
   width: 75%;
   background-color: #1b74e4;
   color: #fff;
@@ -66,7 +66,7 @@ border: 2px solid #dfdfdf;
 width: 100%;
 box-sizing: border-box;
 margin-bottom: 4%;
-color: #f2f2f2;
+color: #3c3c3c;
 }
 
 #usu::placeholder, #pwd::placeholder{
@@ -112,19 +112,98 @@ span{
   background-color: #dfdfdf;
   display: flex;
   flex-direction: column;
-
 }
 #btns p{
   text-align: center;
   padding: 1.5em;
 }
 
-#fb{
+#fb, #ggl{
 width: 90%;
-box-sizing: border-box;
+/* box-sizing: border-box; */
 border-radius: 5px;
 border: none;
-padding: 0.8em;
+padding: 10px 20px;
 background-color: #1b74e4;
 color: #dfdfdf;
+margin-bottom: 1em;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+align-items: center;
+justify-content:center;
+gap: 10em;
+}
+
+#ggl{
+  background-color:#f2f2f2;
+  color: #3c3c3c;
+}
+
+.iconos{
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
+}
+
+.tipoCuenta{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  gap: 1em;
+}
+
+.tipoUsu{
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% /2);
+  border-radius: 10px;
+  padding-bottom: 3%;
+  padding-top: 4%;
+}
+
+.formularioProveedor{
+  border: 15px solid #f2f2f2;
+  padding: 5% 5% 5% 1%;
+  border-radius: 10px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 25% 65%;
+  gap: 1em;
+}
+
+.formulario-prov{
+  
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.img-pwd{
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.selectFecha{
+  display: flex;
+  gap: 1em;
 }

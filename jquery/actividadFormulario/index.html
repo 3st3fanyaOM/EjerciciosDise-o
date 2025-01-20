@@ -3,13 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario</title>
+    <title>Acceso</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <p class="title1">Acceso</p>
+    <!--acceso-->
+    <div>
+      <p class="title1">Acceso</p>
+      <div class="tipoCuenta" style="display: none;">
+        <div class="tipoUsu" id="proveedor">
+          <p>Eres proveedor</p>
+          <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt">
+        </div>
+        <div class="tipoUsu" id="cliente">
+          <p>Eres cliente final</p>
+          <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt">
+        </div>
+      </div>
+      </div>
+      <!-- formulario proveedor -->
+      <div class="formularioProveedor" style="display: none;">
+        <form action="#" method="post" class="formulario-prov">
+          <div>
+            <label for="nombre"><b>|</b> Nombre comercial</label>
+            <input type="text" class="nombre">
+            <p>Nota: No hace falta que coincida con el nombre legal</p>
+           </div>
+           <div>
+            <label for="email"><b>|</b> Correo electrónico</label>
+            <input type="email" name="email" class="email">
+          </div>
+          <div class="password-container">
+            <label for="password"><b>|</b> Contraseña</label>
+            <input type="password" name="password" class="password">
+            <span class="img-pwd"><img src="./img/icons8-ocultar-24.png" alt="ocultar"></span>
+          </div>
+          <div class="password-container">
+            <label for="password"><b>|</b> Confirmar contraseña</label>
+            <input type="password" name="password" class="password">
+            <span class="img-pwd"><img src="./img/icons8-ocultar-24.png" alt="ocultar"></span>
+          </div>
+          <div>
+            <label for="fecha-nacimiento"><b>|</b> Fecha de nacimiento</label>
+            <div class="selectFecha">
+              <select id="anio" name="anio" required>
+                <option value="2007">2007</option>
+            </select>
+            <select id="mes" name="mes" required>
+                <option value="10">10</option>
+            </select>
+            <select id="dia" name="dia" required>
+                <option value="15">15</option>
+            </select>
+        </div>
+        <p>No podrás cambiar la fecha de tu nacimiento más adelante.</p>
+            </div>
+            <hr>
+            <div class="contenedor-checkbox">
+              <input type="checkbox" name="terminos" id="terminos"><span>Confirmo que acepto los términos del contrato de la cuenta y que estoy de acuerdo con la política de privacidad.</span>
+             </div>
+            <hr>
+       <div>
+        <button class="btnCrearCta">Crear</button>
+       </div>
+          </form>
+        </div>   
+<!--login-->
     <div class="login" style="display: none">
-      <input
+      <form>
+        <input
         id="usu"
         type="text"
         placeholder="Correo electrónico o nombre de acceso"
@@ -24,14 +86,19 @@
           /><a href="#">¿Has olvidado la contraseña?</a>
         </span>
         <button id="btn2">Iniciar sesión</button>
+      </form>
       </div>
-
       <div id="btns">
         <p>Inicia sesión con</p>
-        <button id="fb">Facebook</button>
-        <button id="ggl">Google</button>
+        <button id="fb">
+          <img class="iconos" src="./img/icons8-fb-24.png" alt="facebook" />Facebook
+        </button>
+        <button id="ggl">
+          <img class="iconos" src="./img/icons8-logo-de-google-24.png" alt="google" />Google
+        </button>
       </div>
     </div>
+    <!--acceso-->
     <div class="acceso">
       <div class="item1">
         <p>Inicia sesión con tu cuenta</p>
@@ -40,11 +107,11 @@
       <div class="item3">
         <div class="item2">
           <p>¿Tienes ya una cuenta?</p>
-          <button class="btn">Iniciar sesión</button>
+          <button class="btnIniciar">Iniciar sesión</button>
         </div>
         <div class="item2">
           <p>¿No tienes cuenta?</p>
-          <button class="btn">Crear una cuenta</button>
+          <button class="btnCrear">Crear una cuenta</button>
         </div>
       </div>
     </div>
