@@ -94,3 +94,16 @@
   cursor: pointer;
   transition: background 0.3s;
 }
+
+body {
+  height: 100vh; /*viewport heigh altura de pantalla completa*/
+  display: grid; /*parrilla*/
+  grid-template-columns: 1fr; /*1 columna*/
+  grid-template-rows: 1fr 2fr 2fr; /*1fr primer elmt, 2fr dos partes más iguales*/
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
