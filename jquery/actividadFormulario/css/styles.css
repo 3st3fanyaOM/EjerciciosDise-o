@@ -170,13 +170,11 @@ gap: 10em;
   padding: 5% 5% 5% 1%;
   border-radius: 10px;
   width: 80%;
+  margin: auto;
   display: grid;
-  grid-template-columns: 25% 65%;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 15%;
   gap: 1em;
-}
-
-.formulario-prov{
-  
 }
 
 input[type="text"], input[type="email"], input[type="password"], select {
