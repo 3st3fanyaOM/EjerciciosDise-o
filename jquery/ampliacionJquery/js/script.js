@@ -15,6 +15,7 @@ jQuery(document).ready(function ($) {
     switch (event.key) {
       case "ArrowUp":
         console.log("Arriba");
+        moverArriba(event.key);
         break;
       case "ArrowDown":
         console.log("Abajo");
@@ -33,10 +34,20 @@ jQuery(document).ready(function ($) {
 function moverDerecha(keydown) {
   let nuevoValor;
   let interv = setInterval(() => {
-    nuevoValor = parseInt($(".bloque").css("left"));//definir posicion
+    nuevoValor = parseInt($(".bloque").css("left")); //definir posicion
     console.log(nuevoValor);
     $(".bloque").css("left", nuevoValor + 10);
-    if (nuevoValor > 100) clearInterval(interv);
+    if (nuevoValor > 400) clearInterval(interv);
+  }, 250);
+}
+
+function moverArriba() {
+  let nuevoValor;
+  let interv = setInterval(() => {
+    nuevoValor = parseInt($(".bloque").css("bottom")); //definir posicion
+    console.log(nuevoValor);
+    $(".bloque").css("bottom", nuevoValor + 10);
+    if (nuevoValor > 400) clearInterval(interv);
   }, 250);
 }
 
