@@ -1,0 +1,8 @@
+.bloque {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  left: 10px;
+  bottom: 10px;
+  position: absolute;
+}
