@@ -1,3 +1,26 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  flex: 1;
+}
 .form-control-dark {
   border-color: var(--bs-gray);
 }
