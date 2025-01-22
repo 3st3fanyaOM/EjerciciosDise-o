@@ -7,98 +7,152 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--acceso-->
+    <!-- Acceso -->
     <div>
       <p class="title1">Acceso</p>
-      <div class="tipoCuenta" style="display: none;">
+      <div class="tipoCuenta" style="display: none">
         <div class="tipoUsu" id="proveedor">
           <p>Eres proveedor</p>
-          <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt">
+          <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt" />
         </div>
         <div class="tipoUsu" id="cliente">
           <p>Eres cliente final</p>
-          <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt">
+          <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt" />
         </div>
       </div>
-      </div>
-      <!-- formulario proveedor -->
-      <div class="formularioProveedor" style="display: none;">
-        <form action="#" method="post" class="formulario-prov">
-          <div>
-            <label for="nombre"><b>|</b> Nombre comercial</label>
-            <input type="text" class="nombre">
-            <p>Nota: No hace falta que coincida con el nombre legal</p>
-           </div>
-           <div>
-            <label for="email"><b>|</b> Correo electrónico</label>
-            <input type="email" name="email" class="email">
-          </div>
-          <div class="password-container">
-            <label for="password"><b>|</b> Contraseña</label>
-            <input type="password" name="password" class="password">
-            <span class="img-pwd"><img src="./img/icons8-ocultar-24.png" alt="ocultar"></span>
-          </div>
-          <div class="password-container">
-            <label for="password"><b>|</b> Confirmar contraseña</label>
-            <input type="password" name="password" class="password">
-            <span class="img-pwd"><img src="./img/icons8-ocultar-24.png" alt="ocultar"></span>
-          </div>
-          <div>
-            <label for="fecha-nacimiento"><b>|</b> Fecha de nacimiento</label>
-            <div class="selectFecha">
-              <select id="anio" name="anio" required>
-                <option value="2007">2007</option>
+    </div>
+    <!--crear cuenta cliente-->
+    <div class="cuenta-cliente" style="display: none">
+      <form action="#">
+        <label for="nombre"><b>|</b> Nombre completo</label>
+        <input type="text" class="nombre" placeholder="Nombre" />
+        <label for="email"><b>|</b> Correo electrónico</label>
+        <input type="email" name="email" class="email" placeholder="bb@bb.es" />
+        <div class="password-container">
+          <label for="password"><b>|</b> Contraseña</label>
+          <input type="password" name="password" class="password" />
+          <span class="img-pwd">
+            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+          </span>
+        </div>
+        <div class="password-container">
+          <label for="password"><b>|</b> Confirmar contraseña</label>
+          <input type="password" name="password" class="password" />
+          <span class="img-pwd">
+            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+          </span>
+        </div>
+        <hr />
+        <div class="contenedor-checkbox">
+          <input type="checkbox" name="terminos" id="terminos" />
+          <span>
+            Confirmo que acepto los términos del contrato de la cuenta y que
+            estoy de acuerdo con la política de privacidad.
+          </span>
+        </div>
+        <hr />
+        <div>
+          <button class="btnCrearCta">Crear</button>
+        </div>
+      </form>
+    </div>
+    <!-- Formulario proveedor -->
+    <div class="formularioProveedor" style="display: none">
+      <form action="#" method="post" class="formulario-prov">
+        <div>
+          <label for="nombre"><b>|</b> Nombre comercial</label>
+          <input type="text" class="nombre" />
+          <p>Nota: No hace falta que coincida con el nombre legal</p>
+        </div>
+        <div>
+          <label for="email"><b>|</b> Correo electrónico</label>
+          <input type="email" name="email" class="email" />
+        </div>
+        <div class="password-container">
+          <label for="password"><b>|</b> Contraseña</label>
+          <input type="password" name="password" class="password" />
+          <span class="img-pwd">
+            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+          </span>
+        </div>
+        <div class="password-container">
+          <label for="password"><b>|</b> Confirmar contraseña</label>
+          <input type="password" name="password" class="password" />
+          <span class="img-pwd">
+            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+          </span>
+        </div>
+        <div>
+          <label for="fecha-nacimiento"><b>|</b> Fecha de nacimiento</label>
+          <div class="selectFecha">
+            <select id="anio" name="anio" required>
+              <option value="2007">2007</option>
             </select>
             <select id="mes" name="mes" required>
-                <option value="10">10</option>
+              <option value="10">10</option>
             </select>
             <select id="dia" name="dia" required>
-                <option value="15">15</option>
+              <option value="15">15</option>
             </select>
+          </div>
+          <p>No podrás cambiar la fecha de tu nacimiento más adelante.</p>
         </div>
-        <p>No podrás cambiar la fecha de tu nacimiento más adelante.</p>
-            </div>
-            <hr>
-            <div class="contenedor-checkbox">
-              <input type="checkbox" name="terminos" id="terminos"><span>Confirmo que acepto los términos del contrato de la cuenta y que estoy de acuerdo con la política de privacidad.</span>
-             </div>
-            <hr>
-       <div>
-        <button class="btnCrearCta">Crear</button>
-       </div>
-          </form>
-        </div>   
-<!--login-->
+        <hr />
+        <div class="contenedor-checkbox">
+          <input type="checkbox" name="terminos" id="terminos" />
+          <span>
+            Confirmo que acepto los términos del contrato de la cuenta y que
+            estoy de acuerdo con la política de privacidad.
+          </span>
+        </div>
+        <hr />
+        <div>
+          <button class="btnCrearCta">Crear</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Login -->
     <div class="login" style="display: none">
       <form>
         <input
-        id="usu"
-        type="text"
-        placeholder="Correo electrónico o nombre de acceso"
-      /><br />
-      <input type="password" name="" id="pwd" placeholder="Contraseña" /><br />
-      <div class="olvidado">
-        <span>
-          <img
-            class="icono"
-            src="./img/icons8-chevron-derecha-en-círculo-30.png"
-            alt="icono"
-          /><a href="#">¿Has olvidado la contraseña?</a>
-        </span>
-        <button id="btn2">Iniciar sesión</button>
+          id="usu"
+          type="text"
+          placeholder="Correo electrónico o nombre de acceso"
+        /><br />
+        <input type="password" id="pwd" placeholder="Contraseña" /><br />
+        <div class="olvidado">
+          <span>
+            <img
+              class="icono"
+              src="./img/icons8-chevron-derecha-en-círculo-30.png"
+              alt="icono"
+            />
+            <a href="#">¿Has olvidado la contraseña?</a>
+          </span>
+          <button id="btn2">Iniciar sesión</button>
+        </div>
       </form>
-      </div>
       <div id="btns">
         <p>Inicia sesión con</p>
         <button id="fb">
-          <img class="iconos" src="./img/icons8-fb-24.png" alt="facebook" />Facebook
+          <img
+            class="iconos"
+            src="./img/icons8-fb-24.png"
+            alt="facebook"
+          />Facebook
         </button>
         <button id="ggl">
-          <img class="iconos" src="./img/icons8-logo-de-google-24.png" alt="google" />Google
+          <img
+            class="iconos"
+            src="./img/icons8-logo-de-google-24.png"
+            alt="google"
+          />Google
         </button>
       </div>
     </div>
-    <!--acceso-->
+
+    <!-- Acceso -->
     <div class="acceso">
       <div class="item1">
         <p>Inicia sesión con tu cuenta</p>
@@ -115,6 +169,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Scripts -->
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
