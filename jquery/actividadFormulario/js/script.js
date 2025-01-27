@@ -20,6 +20,12 @@ jQuery(document).ready(function ($) {
   $("#proveedor").on("click", function (){
     $(".tipoCuenta").hide();
     $(".title1").text("Crear una cuenta proveedor");
-    $(".formularioProveedor").show();
+    $(".contenedor-formulario-proveedor").show();
+  })
+
+  $("#cliente").on("click", function (){
+    $(".tipoCuenta").hide();
+    $(".title1").text("Crear una cuenta cliente");
+    $(".contenedor-formulario-cliente").show();
   })
 });

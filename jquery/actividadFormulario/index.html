@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Acceso -->
+    <!-- crear cuenta-->
     <div>
       <p class="title1">Acceso</p>
       <div class="tipoCuenta" style="display: none">
@@ -22,92 +22,128 @@
       </div>
     </div>
     <!--crear cuenta cliente-->
-    <div class="cuenta-cliente" style="display: none">
+    <div class="contenedor-formulario-cliente" style="display: none">
       <form action="#">
-        <label for="nombre"><b>|</b> Nombre completo</label>
-        <input type="text" class="nombre" placeholder="Nombre" />
-        <label for="email"><b>|</b> Correo electrónico</label>
-        <input type="email" name="email" class="email" placeholder="bb@bb.es" />
-        <div class="password-container">
+        <div class="formulario-fila">
+          <label for="nombre"><b>|</b> Nombre completo</label>
+          <input type="text" class="input" placeholder="Nombre"/>
+        </div>
+        <div class="formulario-fila">
+          <label for="email"><b>|</b> Correo electrónico</label>
+          <input
+            type="email"
+            name="email"
+            class="input"
+            placeholder="bb@bb.es"
+          />
+        </div>
+        <div class="formulario-fila">
           <label for="password"><b>|</b> Contraseña</label>
-          <input type="password" name="password" class="password" />
-          <span class="img-pwd">
-            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-          </span>
+          <div class="password-container">
+            <input type="password" name="password" class="input" />
+            <span class="img-pwd">
+              <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+            </span>
+          </div>
         </div>
-        <div class="password-container">
+        <div class="formulario-fila">
           <label for="password"><b>|</b> Confirmar contraseña</label>
-          <input type="password" name="password" class="password" />
-          <span class="img-pwd">
-            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-          </span>
+          <div class="password-container">
+            <input type="password" name="password" class="input" />
+            <span class="img-pwd">
+              <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+            </span>
+          </div>
         </div>
-        <hr />
-        <div class="contenedor-checkbox">
-          <input type="checkbox" name="terminos" id="terminos" />
-          <span>
-            Confirmo que acepto los términos del contrato de la cuenta y que
-            estoy de acuerdo con la política de privacidad.
-          </span>
+        <div class="check-fila">
+          <div class="contenedor-checkbox">
+            <span>
+              <input type="checkbox" name="terminos" id="terminos2" checked disabled/>
+              <p>
+                Confirmo que acepto los términos del contrato de la cuenta y que
+                estoy de acuerdo con la política de privacidad.
+              </p>
+            </span>
+          </div>
         </div>
-        <hr />
-        <div>
-          <button class="btnCrearCta">Crear</button>
+        <div class="formulario-fila">
+          <button class="btn-crear">Crear</button>
         </div>
       </form>
     </div>
-    <!-- Formulario proveedor -->
-    <div class="formularioProveedor" style="display: none">
+    <!-- crear cuenta proveedor -->
+    <div class="contenedor-formulario-proveedor" style="display: none">
       <form action="#" method="post" class="formulario-prov">
-        <div>
+        <div class="formulario-fila">
           <label for="nombre"><b>|</b> Nombre comercial</label>
-          <input type="text" class="nombre" />
-          <p>Nota: No hace falta que coincida con el nombre legal</p>
+          <div>
+            <input type="text" class="input" placeholder="Nombre" />
+            <p class="letra-pequeña">
+              Nota: No hace falta que coincida con el nombre legal
+            </p>
+          </div>
         </div>
-        <div>
+        <div class="formulario-fila">
           <label for="email"><b>|</b> Correo electrónico</label>
-          <input type="email" name="email" class="email" />
+          <input
+            type="email"
+            name="email"
+            class="input"
+            placeholder="bb@bb.es"
+          />
         </div>
-        <div class="password-container">
+        <div class="formulario-fila">
           <label for="password"><b>|</b> Contraseña</label>
-          <input type="password" name="password" class="password" />
-          <span class="img-pwd">
-            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-          </span>
+          <div class="password-container">
+            <input type="password" name="password" class="input" />
+            <span class="img-pwd">
+              <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
+            </span>
+          </div>
         </div>
-        <div class="password-container">
-          <label for="password"><b>|</b> Confirmar contraseña</label>
-          <input type="password" name="password" class="password" />
-          <span class="img-pwd">
-            <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-          </span>
+        <div class="formulario-fila">
+          <label for="password"><b>|</b> Recordar Contraseña</label>
+          <div class="password-container">
+            <input type="password" name="password" class="input" />
+            <span class="img-pwd">
+              <img
+                src="./img/icons8-ocultar-24.png"
+                alt="ocultar"
+                class="ojito"
+              />
+            </span>
+          </div>
         </div>
-        <div>
+        <div class="formulario-fila">
           <label for="fecha-nacimiento"><b>|</b> Fecha de nacimiento</label>
           <div class="selectFecha">
-            <select id="anio" name="anio" required>
-              <option value="2007">2007</option>
-            </select>
-            <select id="mes" name="mes" required>
-              <option value="10">10</option>
-            </select>
-            <select id="dia" name="dia" required>
-              <option value="15">15</option>
-            </select>
+            <div>
+              <select id="anio" name="anio" class="select-fecha">
+                <option value="2007">2007</option>
+              </select>
+              <select id="mes" name="mes" class="select-fecha">
+                <option value="10">10</option>
+              </select>
+              <select id="dia" name="dia" class="select-fecha">
+                <option value="15">15</option>
+              </select>
+              <p class="letra-pequeña">No podrás cambiar la fecha de tu nacimiento más adelante.</p>
+            </div>
           </div>
-          <p>No podrás cambiar la fecha de tu nacimiento más adelante.</p>
         </div>
-        <hr />
-        <div class="contenedor-checkbox">
-          <input type="checkbox" name="terminos" id="terminos" />
-          <span>
-            Confirmo que acepto los términos del contrato de la cuenta y que
-            estoy de acuerdo con la política de privacidad.
-          </span>
+        <div class="check-fila">
+          <div class="contenedor-checkbox">
+            <span>
+              <input type="checkbox" name="terminos" id="terminos2" checked disabled/>
+              <p>
+                Confirmo que acepto los términos del contrato de la cuenta y que
+                estoy de acuerdo con la política de privacidad.
+              </p>
+            </span>
+          </div>
         </div>
-        <hr />
-        <div>
-          <button class="btnCrearCta">Crear</button>
+        <div class="formulario-fila">
+          <button class="btn-crear">Crear</button>
         </div>
       </form>
     </div>

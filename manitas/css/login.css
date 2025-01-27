@@ -1,9 +1,10 @@
+/*cuerpo*/
 body {
   background: #212529;
-  background: linear-gradient(to right, #4e6a87, #000000);
   font-family: "Montserrat-Medium", sans-serif;
 }
 
+/*fuente*/
 @font-face {
   font-family: "Montserrat-Medium";
   src: url("../fonts/Montserrat-Medium.ttf") format("ttf");
@@ -11,15 +12,19 @@ body {
   font-style: normal;
 }
 
+/*contenedor login*/
+
 .rounded-3 {
   border-radius: var(--bs-border-radius-lg) !important;
-  background-color: #212529;
+  background-color: #203143;
   color: white;
 }
 
-.form-floating>.form-control, .form-floating>.form-control-plaintext {
-  padding: 1rem .75rem;
-  background-color: rgb(29, 27, 27);
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 1rem 0.75rem;
+  background-color: #1d1b1b;
+  color: #ffffff;
 }
 
 .btn-login {
@@ -38,3 +43,12 @@ body {
   background-color: #3b5998;
 }
 
+/*ojito contraseña*/
+#togglePassword i {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+#togglePassword:hover i {
+  color: #fff;
+}

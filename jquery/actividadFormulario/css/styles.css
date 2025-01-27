@@ -38,7 +38,8 @@ body {
   display: flex;
 }
 
-.btnIniciar, .btnCrear {
+.btnIniciar,
+.btnCrear {
   width: 75%;
   background-color: #1b74e4;
   color: #fff;
@@ -49,7 +50,7 @@ body {
   font-size: 1em;
 }
 
-.login{
+.login {
   width: 55%;
   margin: auto;
   background-color: #f2f2f2;
@@ -58,46 +59,48 @@ body {
   gap: 1em;
 }
 
-#usu, #pwd{
-border-radius: 5px;
-background-color: #f2f2f2;
-padding: 1em;
-border: 2px solid #dfdfdf;
-width: 100%;
-box-sizing: border-box;
-margin-bottom: 4%;
-color: #3c3c3c;
+#usu,
+#pwd {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1em;
+  border: 2px solid #dfdfdf;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 4%;
+  color: #3c3c3c;
 }
 
-#usu::placeholder, #pwd::placeholder{
+#usu::placeholder,
+#pwd::placeholder {
   color: #b1b1b1;
 }
 
-.icono{
+.icono {
   max-width: 1em;
 }
 
-.login a{
+.login a {
   color: #1b74e4;
   text-decoration: none;
   font-size: 0.8em;
 }
 
-span{
+span {
   display: flex;
   align-items: center;
   gap: 0.5em;
 }
 
-.olvidado{
+.olvidado {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   gap: 0.4em;
   margin-bottom: 4%;
 }
 
-#btn2{
+#btn2 {
   border-radius: 20px;
   padding: 0.8em;
   width: 34%;
@@ -106,102 +109,149 @@ span{
   color: #f2f2f2;
 }
 
-#btns{
+#btns {
   width: 100%;
   border-radius: 10px;
   background-color: #dfdfdf;
   display: flex;
   flex-direction: column;
 }
-#btns p{
+#btns p {
   text-align: center;
   padding: 1.5em;
 }
 
-#fb, #ggl{
-width: 90%;
-/* box-sizing: border-box; */
-border-radius: 5px;
-border: none;
-padding: 10px 20px;
-background-color: #1b74e4;
-color: #dfdfdf;
-margin-bottom: 1em;
-margin-left: auto;
-margin-right: auto;
-display: flex;
-align-items: center;
-justify-content:center;
-gap: 10em;
+#fb,
+#ggl {
+  width: 90%;
+  /* box-sizing: border-box; */
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #1b74e4;
+  color: #dfdfdf;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
 }
 
-#ggl{
-  background-color:#f2f2f2;
+#ggl {
+  background-color: #f2f2f2;
   color: #3c3c3c;
 }
 
-.iconos{
+.iconos {
   width: 20px;
   height: 20px;
   padding-right: 5px;
 }
 
-.tipoCuenta{
+.tipoCuenta {
   width: 80%;
   margin: auto;
   display: flex;
   gap: 1em;
 }
 
-.tipoUsu{
+.tipoUsu {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(100% /2);
+  width: calc(100% / 2);
   border-radius: 10px;
   padding-bottom: 3%;
   padding-top: 4%;
 }
 
-.formularioProveedor{
+.contenedor-formulario-proveedor,
+.contenedor-formulario-cliente {
   border: 15px solid #f2f2f2;
   padding: 5% 5% 5% 1%;
   border-radius: 10px;
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-rows: 15%;
-  gap: 1em;
+  gap: 1.5em;
 }
 
-input[type="text"], input[type="email"], input[type="password"], select {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
+form {
+  display: grid;
+  gap: 2em;
+}
+
+.letra-pequeña{
+  margin-top: 1%;
+  font-size: 0.7em;
+}
+
+.input{
   border-radius: 5px;
+  border: 1px solid #b1b1b1;
+  height: 2.5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.formulario-fila {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
 }
 
 .password-container {
   position: relative;
 }
 
-.password-container input {
-  padding-right: 40px;
-}
-
-.img-pwd{
+.img-pwd {
   position: absolute;
   right: 1em;
-  top: 50%;
+  top: 0.4em;
   display: flex;
   align-items: center;
 }
 
-.selectFecha{
+.check-fila{
+  border-top: 1px solid #b1b1b1;
+  border-bottom: 1px solid #b1b1b1;
+  font-size: 0.8em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#terminos2{
+  background-color: #f2f2f2;
+  color: #b1b1b1;
+  border-radius: 5px;
+  width: 1em;
+}
+
+.btn-crear{
+  left: 40%;
+  border-radius: 20px;
+  border: none;
+  background-color: #b1b1b1;
+  color: #f2f2f2;
+  padding: 0.5em 1.5em;
+}
+
+.selectFecha {
   display: flex;
   gap: 1em;
+
+}
+
+.select-fecha{
+  height:2em;
+  border-radius: 5px;
+  border: 1px solid #b1b1b1;
+  height: 2.5em;
+  width: 7em;
 }
