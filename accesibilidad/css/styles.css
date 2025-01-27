@@ -1,0 +1,8 @@
+.salto {
+  position: absolute;
+  top: -50px;
+}
+
+.salto:focus {
+  top: 0;
+}

@@ -10,7 +10,7 @@
     <!-- crear cuenta-->
     <div>
       <p class="title1">Acceso</p>
-      <div class="tipoCuenta" style="display: none">
+      <div class="tipoCuenta oculto">
         <div class="tipoUsu" id="proveedor">
           <p>Eres proveedor</p>
           <img src="./img/icons8-chevron-derecha-en-círculo-30.png" alt="nxt" />
@@ -22,11 +22,11 @@
       </div>
     </div>
     <!--crear cuenta cliente-->
-    <div class="contenedor-formulario-cliente" style="display: none">
+    <div class="contenedor-formulario-cliente oculto">
       <form action="#">
         <div class="formulario-fila">
           <label for="nombre"><b>|</b> Nombre completo</label>
-          <input type="text" class="input" placeholder="Nombre"/>
+          <input type="text" class="input" placeholder="Nombre" />
         </div>
         <div class="formulario-fila">
           <label for="email"><b>|</b> Correo electrónico</label>
@@ -58,7 +58,13 @@
         <div class="check-fila">
           <div class="contenedor-checkbox">
             <span>
-              <input type="checkbox" name="terminos" id="terminos2" checked disabled/>
+              <input
+                type="checkbox"
+                name="terminos"
+                id="terminos"
+                checked
+                disabled
+              />
               <p>
                 Confirmo que acepto los términos del contrato de la cuenta y que
                 estoy de acuerdo con la política de privacidad.
@@ -72,7 +78,7 @@
       </form>
     </div>
     <!-- crear cuenta proveedor -->
-    <div class="contenedor-formulario-proveedor" style="display: none">
+    <div class="contenedor-formulario-proveedor oculto">
       <form action="#" method="post" class="formulario-prov">
         <div class="formulario-fila">
           <label for="nombre"><b>|</b> Nombre comercial</label>
@@ -127,14 +133,22 @@
               <select id="dia" name="dia" class="select-fecha">
                 <option value="15">15</option>
               </select>
-              <p class="letra-pequeña">No podrás cambiar la fecha de tu nacimiento más adelante.</p>
+              <p class="letra-pequeña">
+                No podrás cambiar la fecha de tu nacimiento más adelante.
+              </p>
             </div>
           </div>
         </div>
         <div class="check-fila">
           <div class="contenedor-checkbox">
             <span>
-              <input type="checkbox" name="terminos" id="terminos2" checked disabled/>
+              <input
+                type="checkbox"
+                name="terminos"
+                id="terminos2"
+                checked
+                disabled
+              />
               <p>
                 Confirmo que acepto los términos del contrato de la cuenta y que
                 estoy de acuerdo con la política de privacidad.
@@ -149,14 +163,14 @@
     </div>
 
     <!-- Login -->
-    <div class="login" style="display: none">
+    <div class="login oculto">
       <form>
         <input
           id="usu"
           type="text"
           placeholder="Correo electrónico o nombre de acceso"
-        /><br />
-        <input type="password" id="pwd" placeholder="Contraseña" /><br />
+        />
+        <input type="password" id="pwd" placeholder="Contraseña" />
         <div class="olvidado">
           <span>
             <img

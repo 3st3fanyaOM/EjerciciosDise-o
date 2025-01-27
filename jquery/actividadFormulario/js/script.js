@@ -8,24 +8,29 @@ jQuery(document).ready(function ($) {
     $(".login").slideToggle();
     $("#usu, #pwd").on("input", function () {
       const inputContent = $(this).val().trim();
-      $("#btn2").toggle(inputContent.length > 0);
+      if (inputContent.length == 0) {
+        $("#btn2").attr("disabled", 'true');
+      } else {
+        $("#btn2").attr("disabled", 'false');
+      }
     });
   });
+
   $(".btnCrear").on("click", function () {
     $(".acceso").slideUp();
     $(".title1").text("Cuenta");
     $(".tipoCuenta").slideToggle();
   });
 
-  $("#proveedor").on("click", function (){
+  $("#proveedor").on("click", function () {
     $(".tipoCuenta").hide();
     $(".title1").text("Crear una cuenta proveedor");
     $(".contenedor-formulario-proveedor").show();
-  })
+  });
 
-  $("#cliente").on("click", function (){
+  $("#cliente").on("click", function () {
     $(".tipoCuenta").hide();
     $(".title1").text("Crear una cuenta cliente");
     $(".contenedor-formulario-cliente").show();
-  })
+  });
 });

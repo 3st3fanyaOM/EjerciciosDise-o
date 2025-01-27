@@ -1,0 +1,18 @@
+.bloque{
+    width: 2em;
+    height: 2em;
+    background-color: blueviolet;
+}
+
+.centro{
+text-align: center;
+}
+
+.btn-inicio{
+    border: none;
+    padding: 2em;
+    background-color: #9b3f14;
+    color: #ee9166;
+    font-weight:900;
+    font-size: 1em;
+}

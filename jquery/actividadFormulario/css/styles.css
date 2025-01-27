@@ -185,12 +185,12 @@ form {
   gap: 2em;
 }
 
-.letra-pequeña{
+.letra-pequeña {
   margin-top: 1%;
   font-size: 0.7em;
 }
 
-.input{
+.input {
   border-radius: 5px;
   border: 1px solid #b1b1b1;
   height: 2.5em;
@@ -218,7 +218,7 @@ form {
   align-items: center;
 }
 
-.check-fila{
+.check-fila {
   border-top: 1px solid #b1b1b1;
   border-bottom: 1px solid #b1b1b1;
   font-size: 0.8em;
@@ -226,14 +226,14 @@ form {
   padding-bottom: 2%;
 }
 
-#terminos2{
+#terminos2 {
   background-color: #f2f2f2;
   color: #b1b1b1;
   border-radius: 5px;
   width: 1em;
 }
 
-.btn-crear{
+.btn-crear {
   left: 40%;
   border-radius: 20px;
   border: none;
@@ -245,13 +245,17 @@ form {
 .selectFecha {
   display: flex;
   gap: 1em;
-
 }
 
-.select-fecha{
-  height:2em;
+.select-fecha {
+  height: 2em;
   border-radius: 5px;
   border: 1px solid #b1b1b1;
   height: 2.5em;
   width: 7em;
+}
+
+/*tiene que estar abajo para que no pise los demás*/
+.oculto {
+  display: none;
 }
