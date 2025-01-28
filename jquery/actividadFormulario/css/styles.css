@@ -71,6 +71,17 @@ body {
   color: #3c3c3c;
 }
 
+.inputs-vacios {
+  border-color: #ff0000;
+  background-color: #ec9393;
+}
+
+.p-error {
+  font-size: 0.7em;
+  color: #ff0000;
+  margin: 0;
+}
+
 #usu::placeholder,
 #pwd::placeholder {
   color: #b1b1b1;
@@ -104,8 +115,13 @@ span {
   border-radius: 20px;
   padding: 0.8em;
   width: 34%;
-  background-color: #b1b1b1;
+  background-color: #1b74e4;
   border: none;
+  color: #f2f2f2;
+}
+
+#btn2:disabled {
+  background-color: #b1b1b1;
   color: #f2f2f2;
 }
 

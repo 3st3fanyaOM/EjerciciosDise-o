@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--no debe repetirse el title en otras pags-->
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!--saltar al contenido ppal-->
     <a class="salto" href="#principal">Ir al contenido principal</a>
     <header>
-      <nav>
+      <nav aria-label="menu-principal">
+        <!--aria-label solo lo lee los lectores, para etiquetas que se repiten, diferenciarlas-->
         <ul>
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
@@ -18,8 +20,17 @@
           <li><a href="#"></a></li>
         </ul>
       </nav>
+      <!--title en a-->
+      <a href="conocenos" target="_blank" title="Enlace en otra pag conocenos">Conocenos</a>
     </header>
+    <aside>
+      <!--fuera del main-->
+    </aside>
     <main id="principal">
+      <!--cacas-->
+      <div>Hola</div><br><b></b><u></u><i></i>
+      <!--unico titulo en h1-->
+      <h1>Titulo</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
         distinctio nesciunt aliquid architecto. Reprehenderit, corporis quae
