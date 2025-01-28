@@ -9,9 +9,9 @@ jQuery(document).ready(function ($) {
     $("#usu, #pwd").on("input", function () {
       const inputContent = $(this).val().trim();
       if (inputContent.length == 0) {
-        $("#btn2").attr("disabled", 'true');
+        $("#btn2").attr("disabled", "true");
       } else {
-        $("#btn2").attr("disabled", 'false');
+        $("#btn2").attr("disabled", "false");
       }
     });
   });
@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
   $(".btnCrear").on("click", function () {
     $(".acceso").slideUp();
     $(".title1").text("Cuenta");
-    $(".tipoCuenta").slideToggle();
+    $(".tipoCuenta").slideToggle().css("display", "flex");
   });
 
   $("#proveedor").on("click", function () {
