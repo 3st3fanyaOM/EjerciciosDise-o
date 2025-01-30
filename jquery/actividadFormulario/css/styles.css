@@ -71,11 +71,6 @@ body {
   color: #3c3c3c;
 }
 
-.inputs-vacios {
-  border-color: #ff0000;
-  background-color: #ec9393;
-}
-
 .p-error {
   font-size: 0.7em;
   color: #ff0000;
@@ -151,8 +146,7 @@ span {
   margin-right: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10em;
+  gap: 40%;
 }
 
 #ggl {
@@ -163,7 +157,7 @@ span {
 .iconos {
   width: 20px;
   height: 20px;
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .tipoCuenta {
@@ -222,6 +216,12 @@ form {
   align-items: center;
 }
 
+.formulario-fila-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .password-container {
   position: relative;
 }
@@ -255,7 +255,7 @@ form {
   border: none;
   background-color: #b1b1b1;
   color: #f2f2f2;
-  padding: 0.5em 1.5em;
+  padding: 0.8em 6em;
 }
 
 .selectFecha {
@@ -274,4 +274,21 @@ form {
 /*tiene que estar abajo para que no pise los demás*/
 .oculto {
   display: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 0.7em;
+  display: none;
+}
+
+.error-vacio {
+  border-color: 2px solid #ff0000 !important;
+  background-color: #f0cccc;
+}
+
+.contenedor-inpt{
+  display: flex;
+  flex-direction: column;
 }

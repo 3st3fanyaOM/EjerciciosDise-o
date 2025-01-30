@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acceso</title>
     <link rel="stylesheet" href="./css/styles.css" />
+     <!-- Iconos de Font Awesome-->
+     <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+     rel="stylesheet"
+   />
   </head>
   <body>
     <!-- crear cuenta-->
@@ -26,35 +31,50 @@
       <form action="#">
         <div class="formulario-fila">
           <label for="nombre"><b>|</b> Nombre completo</label>
-          <input type="text" class="input" placeholder="Nombre" />
+          <div class="contenedor-inpt">
+            <input type="text" class="input" placeholder="Nombre" />
+            <div class="error-message">No se puede dejar en blanco</div>
+          </div>
         </div>
         <div class="formulario-fila">
           <label for="email"><b>|</b> Correo electrónico</label>
-          <input
-            type="email"
-            name="email"
-            class="input"
-            placeholder="bb@bb.es"
-          />
-        </div>
-        <div class="formulario-fila">
-          <label for="password"><b>|</b> Contraseña</label>
-          <div class="password-container">
-            <input type="password" name="password" class="input" />
-            <span class="img-pwd">
-              <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-            </span>
+          <div class="contenedor-inpt">
+            <input
+              type="email"
+              name="email"
+              class="input"
+              placeholder="bb@bb.es"
+            />
+            <div class="error-message">No se puede dejar en blanco</div>
           </div>
         </div>
+
         <div class="formulario-fila">
-          <label for="password"><b>|</b> Confirmar contraseña</label>
+          <label for="password"><b>|</b>Contraseña</label>
           <div class="password-container">
-            <input type="password" name="password" class="input" />
-            <span class="img-pwd">
-              <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-            </span>
+            <div class="contenedor-inpt">
+              <input type="password" name="password" class="input passw" />
+              <span class="img-pwd">
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+              <div class="error-message">No se puede dejar en blanco</div>
+            </div>
           </div>
         </div>
+
+        <div class="formulario-fila">
+          <label for="password"><b>|</b> Confirmar Contraseña</label>
+          <div class="password-container">
+            <div class="contenedor-inpt">
+              <input type="password" name="password" class="input passw" />
+              <span class="img-pwd">
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+              <div class="error-message">No se puede dejar en blanco</div>
+            </div>
+          </div>
+        </div>
+
         <div class="check-fila">
           <div class="contenedor-checkbox">
             <span>
@@ -72,7 +92,7 @@
             </span>
           </div>
         </div>
-        <div class="formulario-fila">
+        <div class="formulario-fila-boton">
           <button class="btn-crear">Crear</button>
         </div>
       </form>
@@ -83,41 +103,49 @@
         <div class="formulario-fila">
           <label for="nombre"><b>|</b> Nombre comercial</label>
           <div>
-            <input type="text" class="input" placeholder="Nombre" />
-            <p class="letra-pequeña">
-              Nota: No hace falta que coincida con el nombre legal
-            </p>
+            <div class="contenedor-inpt">
+              <input type="text" class="input" placeholder="Nombre" />
+              <div class="error-message">No se puede dejar en blanco</div>
+              <p class="letra-pequeña">
+                Nota: No hace falta que coincida con el nombre legal
+              </p>
+            </div>
           </div>
         </div>
         <div class="formulario-fila">
           <label for="email"><b>|</b> Correo electrónico</label>
-          <input
-            type="email"
-            name="email"
-            class="input"
-            placeholder="bb@bb.es"
-          />
+          <div class="contenedor-inpt">
+            <input
+              type="email"
+              name="email"
+              class="input"
+              placeholder="bb@bb.es"
+            />
+            <div class="error-message">No se puede dejar en blanco</div>
+          </div>
         </div>
         <div class="formulario-fila">
-          <label for="password"><b>|</b> Contraseña</label>
+          <label for="password"><b>|</b>Contraseña</label>
           <div class="password-container">
-            <input type="password" name="password" class="input" />
-            <span class="img-pwd">
-              <img src="./img/icons8-ocultar-24.png" alt="ocultar" />
-            </span>
+            <div class="contenedor-inpt">
+              <input type="password" name="password" class="input passw" />
+              <span class="img-pwd">
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+              <div class="error-message">No se puede dejar en blanco</div>
+            </div>
           </div>
         </div>
         <div class="formulario-fila">
           <label for="password"><b>|</b> Recordar Contraseña</label>
           <div class="password-container">
-            <input type="password" name="password" class="input" />
-            <span class="img-pwd">
-              <img
-                src="./img/icons8-ocultar-24.png"
-                alt="ocultar"
-                class="ojito"
-              />
-            </span>
+            <div class="contenedor-inpt">
+              <input type="password" name="password" class="input passw" />
+              <span class="img-pwd">
+                <i class="fa-regular fa-eye-slash"></i>
+              </span>
+              <div class="error-message">No se puede dejar en blanco</div>
+            </div>
           </div>
         </div>
         <div class="formulario-fila">
@@ -156,12 +184,11 @@
             </span>
           </div>
         </div>
-        <div class="formulario-fila">
+        <div class="formulario-fila-boton">
           <button class="btn-crear">Crear</button>
         </div>
       </form>
     </div>
-
     <!-- Login -->
     <div class="login oculto">
       <form>
