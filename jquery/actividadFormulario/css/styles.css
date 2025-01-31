@@ -288,7 +288,24 @@ form {
   background-color: #f0cccc;
 }
 
-.contenedor-inpt{
+.contenedor-inpt {
   display: flex;
   flex-direction: column;
+}
+
+.btn-activo {
+  background-color: #1b74e4;
+}
+
+#mensaje-exito {
+  display: none;
+}
+
+.mensaje{
+  border: 10px solid #ffffff;
+  border-radius: 10px;
+  margin:2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

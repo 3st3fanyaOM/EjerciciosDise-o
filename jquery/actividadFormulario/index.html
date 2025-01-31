@@ -55,7 +55,10 @@
             <div class="contenedor-inpt">
               <input type="password" name="password" class="input" id="pass1" />
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash" id="ojito1"></i>
+                <i
+                  class="toggle-password fas fa-eye-slash img-pwd"
+                  data-target="pass1"
+                ></i>
               </span>
               <div class="error-message">No se puede dejar en blanco</div>
             </div>
@@ -68,7 +71,10 @@
             <div class="contenedor-inpt">
               <input type="password" name="password" class="input" id="pass2" />
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash" id="ojito2"></i>
+                <i
+                  class="toggle-password fas fa-eye-slash img-pwd"
+                  data-target="pass2"
+                ></i>
               </span>
               <div class="error-message">No se puede dejar en blanco</div>
             </div>
@@ -78,13 +84,7 @@
         <div class="check-fila">
           <div class="contenedor-checkbox">
             <span>
-              <input
-                type="checkbox"
-                name="terminos"
-                id="terminos"
-                checked
-                disabled
-              />
+              <input type="checkbox" name="terminos" id="terminos" disabled />
               <p>
                 Confirmo que acepto los términos del contrato de la cuenta y que
                 estoy de acuerdo con la política de privacidad.
@@ -97,6 +97,7 @@
         </div>
       </form>
     </div>
+    <div id="mensaje-exito"><p>Gracias por crear tu cuenta</p></div>
     <!-- crear cuenta proveedor -->
     <div class="contenedor-formulario-proveedor oculto">
       <form action="#" method="post" class="formulario-prov">
@@ -131,9 +132,11 @@
               <input type="password" name="password" class="input" id="pass3" />
               <div class="error-message">No se puede dejar en blanco</div>
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash" id="ojito3"></i>
+                <i
+                  class="toggle-password fas fa-eye-slash img-pwd"
+                  data-target="pass3"
+                ></i>
               </span>
-              
             </div>
           </div>
         </div>
@@ -143,13 +146,14 @@
             <div class="contenedor-inpt">
               <input type="password" name="password" class="input" id="pass4" />
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash" id="ojito4"></i>
+                <i
+                  class="toggle-password fas fa-eye-slash img-pwd"
+                  data-target="pass4"
+                ></i>
               </span>
               <div class="error-message">No se puede dejar en blanco</div>
             </div>
-            
           </div>
-         
         </div>
         <div class="formulario-fila">
           <label for="fecha-nacimiento"><b>|</b> Fecha de nacimiento</label>
@@ -173,13 +177,7 @@
         <div class="check-fila">
           <div class="contenedor-checkbox">
             <span>
-              <input
-                type="checkbox"
-                name="terminos"
-                id="terminos2"
-                checked
-                disabled
-              />
+              <input type="checkbox" name="terminos" id="terminos2" />
               <p>
                 Confirmo que acepto los términos del contrato de la cuenta y que
                 estoy de acuerdo con la política de privacidad.
@@ -192,6 +190,7 @@
         </div>
       </form>
     </div>
+    <p id="mensaje-exito">Gracias por crear tu cuenta 😊</p>
     <!-- Login -->
     <div class="login oculto">
       <form>
