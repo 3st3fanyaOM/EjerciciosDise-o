@@ -33,46 +33,47 @@ jQuery(document).ready(function ($) {
     $(".title1").text("Crear una cuenta cliente");
     $(".contenedor-formulario-cliente").show();
   });
+
   //si sale de un input y lo deja vacio, cambia de estilo y muestra msj error
   $("input").on("blur", function () {
+    console.log("hola");
     if ($(this).val().trim() === "") {
       $(this).css({
-        border: "2px solid #d2a6a6",
+        border: "2px solid #e91f1f",
         "background-color": "#ffe6e6",
       });
-      $(this).next(".error-message").show();
+      $(this).siblings(".error-message").show();
     } else {
       $(this).css({
         border: "",
         "background-color": "",
       });
-      $(this).next(".error-message").hide();
+      $(this).siblings(".error-message").hide();
     }
-    //funcionalidad mostrar/ocultar contraseña
-    $(".fa-regular").on("click", function () {
-      $('#mostrar').click(function(){
-        //Comprobamos que la cadena NO esté vacía.
-        if($(this).hasClass('fa-regular') && ($("#password").val() != ""))
-        {
-        $('#password').removeAttr('type');
-        $('#mostrar').addClass('fas-fa-eye-slash').removeClass('fas-fa-eye');
-        $('.pwdtxt').html("Ocultar contraseña");
-        }
-        else
-        {
-        $('#password').attr('type','password');
-        $('#mostrar').addClass('fas-fa-eye').removeClass('fas-fa-eye-slash');
-        $('.pwdtxt').html("Mostrar contraseña");
-        }
-        });
-      // let valorPwd = $(".passw");
-      // let tipo = valorPwd.attr("type") === "password" ? "text" : "password";
-      // valorPwd.attr("type", tipo);
 
-      // let icono =
-      //   tipo === "password"
-      //     ? "./img/icons8-ocultar-24.png"
-      //     : "./img/icons8-visible-24.png";
+    //funcionalidad mostrar/ocultar contraseña
+    $("#ojito1").on("click", function () {
+      $("#pass1").attr("type", function (index, attr) {
+        return attr == "text" ? "password" : "text";
+      });
+    });
+
+    $("#ojito2").on("click", function () {
+      $("#pass2").attr("type", function (index, attr) {
+        return attr == "text" ? "password" : "text";
+      });
+    });
+
+    $("#ojito3").on("click", function () {
+      $("#pass3").attr("type", function (index, attr) {
+        return attr == "text" ? "password" : "text";
+      });
+    });
+
+    $("#ojito4").on("click", function () {
+      $("#pass4").attr("type", function (index, attr) {
+        return attr == "text" ? "password" : "text";
+      });
     });
   });
 });

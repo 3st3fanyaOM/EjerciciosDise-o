@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acceso</title>
     <link rel="stylesheet" href="./css/styles.css" />
-     <!-- Iconos de Font Awesome-->
-     <link
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-     rel="stylesheet"
-   />
+    <!-- Iconos de Font Awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- crear cuenta-->
@@ -53,9 +53,9 @@
           <label for="password"><b>|</b>Contraseña</label>
           <div class="password-container">
             <div class="contenedor-inpt">
-              <input type="password" name="password" class="input passw" />
+              <input type="password" name="password" class="input" id="pass1" />
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye-slash" id="ojito1"></i>
               </span>
               <div class="error-message">No se puede dejar en blanco</div>
             </div>
@@ -66,9 +66,9 @@
           <label for="password"><b>|</b> Confirmar Contraseña</label>
           <div class="password-container">
             <div class="contenedor-inpt">
-              <input type="password" name="password" class="input passw" />
+              <input type="password" name="password" class="input" id="pass2" />
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye-slash" id="ojito2"></i>
               </span>
               <div class="error-message">No se puede dejar en blanco</div>
             </div>
@@ -128,11 +128,12 @@
           <label for="password"><b>|</b>Contraseña</label>
           <div class="password-container">
             <div class="contenedor-inpt">
-              <input type="password" name="password" class="input passw" />
-              <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash"></i>
-              </span>
+              <input type="password" name="password" class="input" id="pass3" />
               <div class="error-message">No se puede dejar en blanco</div>
+              <span class="img-pwd">
+                <i class="fa-regular fa-eye-slash" id="ojito3"></i>
+              </span>
+              
             </div>
           </div>
         </div>
@@ -140,13 +141,15 @@
           <label for="password"><b>|</b> Recordar Contraseña</label>
           <div class="password-container">
             <div class="contenedor-inpt">
-              <input type="password" name="password" class="input passw" />
+              <input type="password" name="password" class="input" id="pass4" />
               <span class="img-pwd">
-                <i class="fa-regular fa-eye-slash"></i>
+                <i class="fa-regular fa-eye-slash" id="ojito4"></i>
               </span>
               <div class="error-message">No se puede dejar en blanco</div>
             </div>
+            
           </div>
+         
         </div>
         <div class="formulario-fila">
           <label for="fecha-nacimiento"><b>|</b> Fecha de nacimiento</label>
