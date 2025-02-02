@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de la Serpiente</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .contenedor {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        background-color: #f0f0f0;
+        overflow: hidden;
+      }
+      .bloque {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: green;
+      }
+      .comida {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Juego de la Serpiente</h2>
+    <div class="contenedor">
+      <div class="bloque"></div>
+      <div class="comida"></div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        console.log("text")
+        const $contenedor = $(".contenedor");
+        let serpiente = [{ x: 0, y: 0 }];
+        let direccion = "derecha";
+        let intervalo;
+        let comida = { x: 100, y: 100 };
+
+        function actualizarComida() {
+          comida.x =
+            Math.floor(Math.random() * ($contenedor.width() / 20)) * 20;
+          comida.y =
+            Math.floor(Math.random() * ($contenedor.height() / 20)) * 20;
+          $(".comida").css({ left: comida.x, top: comida.y });
+        }
+
+        function moverSerpiente() {
+          let cabeza = { ...serpiente[0] };
+
+          switch (direccion) {
+            case "arriba":
+              cabeza.y -= 20;
+              break;
+            case "abajo":
+              cabeza.y += 20;
+              break;
+            case "izquierda":
+              cabeza.x -= 20;
+              break;
+            case "derecha":
+              cabeza.x += 20;
+              break;
+          }
+
+          // Verifica colisiones con los bordes
+          if (
+            cabeza.x < 0 ||
+            cabeza.y < 0 ||
+            cabeza.x >= $contenedor.width() ||
+            cabeza.y >= $contenedor.height()
+          ) {
+            alert("¡Game Over! Puntuación: " + (serpiente.length - 1));
+            location.reload();
+          }
+
+          // Verifica colisión con la comida
+          if (cabeza.x === comida.x && cabeza.y === comida.y) {
+            actualizarComida();
+          } else {
+            serpiente.pop(); // Elimina la última parte si no come
+          }
+
+          // Agrega la nueva cabeza
+          serpiente.unshift(cabeza);
+
+          // Renderiza la serpiente en la pantalla
+          $(".bloque").remove();
+          serpiente.forEach((segmento) => {
+            $(".contenedor").append(
+              `<div class='bloque' style='left: ${segmento.x}px; top: ${segmento.y}px;'></div>`
+            );
+          });
+        }
+
+        // Capturar las teclas para cambiar dirección
+        $(document).keydown(function (event) {
+          switch (event.key) {
+            case "ArrowUp":
+              if (direccion !== "abajo") direccion = "arriba";
+              break;
+            case "ArrowDown":
+              if (direccion !== "arriba") direccion = "abajo";
+              break;
+            case "ArrowLeft":
+              if (direccion !== "derecha") direccion = "izquierda";
+              break;
+            case "ArrowRight":
+              if (direccion !== "izquierda") direccion = "derecha";
+              break;
+          }
+        });
+
+        // Iniciar el juego
+        actualizarComida();
+        intervalo = setInterval(moverSerpiente, 150);
+      });
+    </script>
+  </body>
+</html>

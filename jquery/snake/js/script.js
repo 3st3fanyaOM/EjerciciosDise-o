@@ -1,9 +1,12 @@
 $(document).ready(function () {
+    console.log("test");
+    $(".btn-reiniciar").hide();//esconder boton reiniciar partida
+    //variables
     const boardSize = 20; // Tablero de 20x20 celdas
     const cellSize = 20;  // Tamaño de cada celda
     let gameInterval, timeInterval;
     let snake, food, direction, gameStarted, gameOver, timeLeft;
-    let gameWalls = true; // Cambia a 'false' para permitir atravesar las paredes
+    let gameWalls = true; 
 
     // Iniciar juego
     $(".btn-inicio").click(function () {
@@ -11,6 +14,7 @@ $(document).ready(function () {
     });
 
     // Reiniciar juego
+   
     $(".btn-reiniciar").click(function () {
         startGame();
     });
@@ -127,7 +131,7 @@ $(document).ready(function () {
             let snakePart = $('<div>').addClass('snake').css({
                 width: cellSize,
                 height: cellSize,
-                backgroundColor: 'green',
+                backgroundColor: 'black',
                 position: 'absolute',
                 top: segment.y * cellSize,
                 left: segment.x * cellSize
@@ -142,7 +146,7 @@ $(document).ready(function () {
         let foodElement = $('<div>').addClass('food').css({
             width: cellSize,
             height: cellSize,
-            backgroundColor: 'red',
+            backgroundColor: 'black',
             position: 'absolute',
             top: food.y * cellSize,
             left: food.x * cellSize

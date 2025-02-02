@@ -57,6 +57,10 @@ header {
 }
 
 /*contenido ppal*/
+.salto {
+  position: absolute;
+  top: -50px;
+}
 
 main {
   flex: 1;
