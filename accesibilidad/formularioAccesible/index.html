@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <!-- Salto al contenido principal -->
+    <a class="salto" href="#principal">Ir al contenido principal</a>
+
+    <header>
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="registro.html">Registrarse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="principal">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li class="active">Datos personales</li>
+        </ul>
+      </nav>
+
+      <!-- Formulario de Registro -->
+      <div class="container">
+        <h1>Crea tu cuenta</h1>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              autocomplete="name"
+            />
+
+            <label for="email">Correo Electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+            />
+
+            <label for="password">Contraseña:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="new-password"
+            />
+
+            <label for="confirm_password">Confirmar Contraseña:</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              required
+              autocomplete="new-password"
+            />
+
+            <button type="submit">Registrarse</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

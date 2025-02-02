@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  flex-direction: column;
+}
+.salto {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  transition: top 0.3s;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+.breadcrumb li {
+  margin-right: 10px;
+}
+.breadcrumb li:not(:last-child)::after {
+  content: "›";
+  margin-left: 10px;
+  color: #6c757d;
+}
+.breadcrumb li a {
+  text-decoration: none;
+  color: #007bff;
+}
+.breadcrumb li.active {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+/* --- ENCABEZADO --- */
+header {
+  background-color: #007bff;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+}
