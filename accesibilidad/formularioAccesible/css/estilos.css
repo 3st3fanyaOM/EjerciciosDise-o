@@ -10,13 +10,10 @@ body {
 .salto {
   position: absolute;
   top: -50px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background: #007bff;
-  color: white;
-  padding: 10px;
-  transition: top 0.3s;
+}
+
+.salto:focus {
+  top: 0;
 }
 
 .container {
@@ -39,7 +36,7 @@ input {
 }
 
 button {
-  width: 100%;
+  width: 97%;
   padding: 10px;
   background-color: #007bff;
   color: white;
@@ -59,8 +56,10 @@ button:focus {
   list-style: none;
   display: flex;
   padding: 10px;
-  background-color: #f8f9fa;
+  background-color: #383d43;
   border-radius: 5px;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 .breadcrumb li {
   margin-right: 10px;

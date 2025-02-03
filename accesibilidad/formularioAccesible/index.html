@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--titulo de página-->
     <title>Registro de Usuario</title>
     <link rel="stylesheet" href="./css/estilos.css" />
   </head>
@@ -11,6 +12,7 @@
     <a class="salto" href="#principal">Ir al contenido principal</a>
 
     <header>
+      <!--ariab alebl para diferenciar nav de otros-->
       <nav aria-label="Menú principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -23,8 +25,10 @@
 
     <main id="principal">
       <!-- Breadcrumb -->
+      <!--ariab label para diferenciar nav de otros-->
       <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
+          <!--etiquetas a para enlazar a otras pags-->
           <li><a href="index.html">Inicio</a></li>
           <li><a href="registro.html">Registro</a></li>
           <li class="active">Datos personales</li>
@@ -33,8 +37,9 @@
 
       <!-- Formulario de Registro -->
       <div class="container">
+        <!--Único titulo en h1-->
         <h1>Crea tu cuenta</h1>
-        <form action="#" method="POST">
+        <form action="#" method="POST" role="form">
           <fieldset>
             <legend>Datos personales</legend>
 
@@ -73,7 +78,7 @@
               required
               autocomplete="new-password"
             />
-
+            <!--button para acción-->
             <button type="submit">Registrarse</button>
           </fieldset>
         </form>
