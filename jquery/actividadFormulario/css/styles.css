@@ -45,7 +45,7 @@ body {
   color: #fff;
   border-radius: 30px;
   border-style: none;
-  padding: 1em;
+  padding: 1em 2em;
   margin-bottom: 2%;
   font-size: 1em;
 }
@@ -182,7 +182,7 @@ span {
 .contenedor-formulario-proveedor,
 .contenedor-formulario-cliente {
   border: 15px solid #f2f2f2;
-  padding: 5% 5% 5% 1%;
+  padding: 5%;
   border-radius: 10px;
   width: 80%;
   margin: auto;
@@ -190,9 +190,9 @@ span {
   gap: 1.5em;
 }
 
-form {
+.formulario-login {
   display: grid;
-  gap: 2em;
+  gap: 1em;
 }
 
 .letra-pequeña {
@@ -214,6 +214,8 @@ form {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
+  gap:1em;
+  margin-bottom: 1em;
 }
 
 .formulario-fila-boton {
@@ -256,6 +258,7 @@ form {
   background-color: #b1b1b1;
   color: #f2f2f2;
   padding: 0.8em 6em;
+  margin-top: 1em;
 }
 
 .selectFecha {
@@ -301,10 +304,10 @@ form {
   display: none;
 }
 
-.mensaje{
+.mensaje {
   border: 10px solid #ffffff;
   border-radius: 10px;
-  margin:2em;
+  margin: 2em;
   display: flex;
   align-items: center;
   justify-content: center;

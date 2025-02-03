@@ -28,6 +28,7 @@ jQuery(document).ready(function ($) {
     $(".tipoCuenta").hide();
     $(".title1").text("Crear una cuenta proveedor");
     $(".contenedor-formulario-proveedor").show();
+    $(".contenedor-formulario-proveedor").css("display", "flex");
   });
 
   //crear cuenta cliente
