@@ -1,37 +1,53 @@
 jQuery(document).ready(function () {
   console.log("test");
-  let bloque = [{ x: 0, y: 0 }];
+
   let veces = 0;
-  //botón de inicio para empezar.
+  let empieza;
+
+  //generar un nuevoBloque div
+  function generarBloque() {
+    if (veces < 10) {
+      let x = Math.floor(Math.random() * 500);
+      let y = Math.floor(Math.random() * 500);
+
+      let nuevoBloque = $("<div class='bloque'></div>");
+      nuevoBloque.css({
+        position: "absolute",
+        top: x + "px", //generado por random
+        left: y + "px", //generado por random
+        width: "50px",
+        height: "50px",
+        background: "red",
+      });
+
+      $("body").append(nuevoBloque);
+
+      //desaparecer el bloque y generar uno nuevoBloque
+      nuevoBloque.on("mouseenter", function () {
+        $(this).fadeOut(500, function () {
+          $(this).remove();
+          veces++;
+
+          if (veces < 10) {
+            generarBloque(); // Generar un nuevoBloque bloque automáticamente
+          } else {
+            let fin = new Date().getTime();
+            let tiempoTotal = Math.round((fin - empieza) / 1000); //pasar a secs
+            alert("Tiempo de juego: " + tiempoTotal + " segundos");
+            $(".btn-inicio").text("Nuevo juego");
+            veces = 0;
+          }
+        });
+      });
+    }
+  }
+
+  // Evento de inicio del juego
   $(".btn-inicio").on("click", function () {
-    //mostrar aleatoriamente bloques
-    if(veces <11){
-    let x = Math.floor(Math.random() * 50);
-    let y = Math.floor(Math.random() * 50);
-    
-    $("bloque").css("top",x);
-    $("bloque").css("left",y);
-    veces++;
-     //cuando pase por encima desaparece
-     //$(bloque).on("blur", function ({
-      //$(bloque).hide();
-    });
-    
-    //cuando pase por encima desaparece
-    //$(bloque).on("blur", function ({
-      //$(bloque).hide();
-    //});
-    });
+    if (veces === 0) {
+      empieza = new Date().getTime(); // guardar hora de inicio
+    }
 
-  
-    
-
-    // llegar a 10
-    // muestre el tiempo entre el clic de inicio y pasar por encima del décimo bloque.
-
-    //al finalizar botón REINICIAR volver a empezar (botón de inicio).
-    //$(".btn-inicio").text("REINICIAR PARTIDA");
-
-
-    // Generar bloque en una posición aleatoria
-
+    generarBloque(); // saca el primer bloque
+  });
+});
