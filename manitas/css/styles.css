@@ -95,6 +95,7 @@ main.bg-dark {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .servicio-card:hover {
@@ -128,9 +129,11 @@ main.bg-dark {
 }
 
 .service-icon {
-  width: 75px;
-  height: 75px;
-  margin: 0 auto 1rem;
+  width: 80%;
+  height: 40%;
+  object-fit: cover;
+  margin-bottom: 1em;
+  display: block;
 }
 
 .precio-servicio {
