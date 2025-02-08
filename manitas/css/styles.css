@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-brand img.logo {
-  height: 64px;
+  height: 8em;
   width: auto; /*proporción del logo */
   object-fit: contain;
 }
@@ -84,7 +84,7 @@ main.bg-dark {
 .servicio-card {
   background: #3b3e42;
   border-radius: 10px;
-  padding: 1.5rem;
+  padding: 1em 1.5em;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -130,7 +130,7 @@ main.bg-dark {
 
 .service-icon {
   width: 80%;
-  height: 40%;
+  height: 60%;
   object-fit: cover;
   margin-bottom: 1em;
   display: block;
