@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snake Game</title>
+    <title>Juego de la Serpiente</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container-snake">
-      <div class="jaula"></div>
-      <button class="btn-inicio">START</button>
-      <button class="btn-reiniciar">REINICIAR</button>
-      <div class="temporizador"><span class="contador">60</span></div>
+    <div class="botones">
+      <button class="btn-inicio">NUEVO JUEGO</button>
+      <button class="btn-reiniciar" style="display: none">REINICIAR</button>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <div class="jaula">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="contador">
+      <p>Tiempo de juego: <span>60</span> segundos</p>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
