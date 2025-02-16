@@ -25,10 +25,10 @@ jQuery(document).ready(function ($) {
 
   //crear cuenta proveedor
   $("#proveedor").on("click", function () {
-    $(".tipoCuenta").hide();
-    $(".title1").text("Crear una cuenta proveedor");
-    $(".contenedor-formulario-proveedor").show();
-    $(".contenedor-formulario-proveedor").css("display", "flex");
+    $(".tipoCuenta").hide();//esconcde el div tipoCuenta
+    $(".title1").text("Crear una cuenta proveedor");//cambia el titulo
+    $(".contenedor-formulario-proveedor").show();//muestra el div contenedor-formulario-proveedor
+    $(".contenedor-formulario-proveedor").css("display", "flex");//cambia el display a flex
   });
 
   //crear cuenta cliente
@@ -46,7 +46,7 @@ jQuery(document).ready(function ($) {
         border: "2px solid #e91f1f",
         "background-color": "#ffe6e6",
       });
-      $(this).siblings(".error-message").show();
+      $(this).siblings(".error-message").show();//hermanos, hijos del mismo padre
     } else {
       $(this).css({
         border: "",
@@ -61,9 +61,9 @@ jQuery(document).ready(function ($) {
     let inputId = $(this).data("target");
     let input = $("#" + inputId);
     let type = input.attr("type") === "password" ? "text" : "password";
-    input.attr("type", type);
+    input.attr("type", type);//cambia el tipo de input
 
-    // Alternar icono ojo abierto y ojo cerrado
+    // Alternar icono ojo abierto y ojo cerrado cuando lo clickeas
     $(this).toggleClass("fa-eye fa-eye-slash");
   });
 
