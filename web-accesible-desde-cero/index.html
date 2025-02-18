@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Accesibilidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <a class="saltoContenido" href="#principal">Saltar al contenido principal</a>
+    <header>
+        <nav aria-label="Menú principal" class="menuPrincipal">
+            <ul>
+                <li><a href="#">Menú 1</a></li>
+                <li><a href="#">Menú 2</a></li>
+                <li><a href="#">Menú 3</a></li>
+                <li><a href="#">Menú 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="principal">
+        <h1>Actividad Accesibilidad</h1>
+        <form role="form">
+            <fieldset>
+                <legend>Formulario inscripción</legend>
+                <label for="campo1">Campo1 obligatorio <input type="text" name="campo1" aria-required="true"></label>
+                <label for="campo2">Campo2 <input type="text" name="campo2" aria-required="false"></label>
+                <label for="campo3">Campo3 <input type="text" name="campo3" aria-required="false"></label>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>Lorem ipsum et dolor sumum</p>
+        <nav aria-label="Menú secundario del pie" class="menuPie">
+            <ul>
+                <li><a href="#">Menú 1</a></li>
+                <li><a href="#">Menú 2</a></li>
+                <li><a href="#">Menú 3</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</body>
+</html>
