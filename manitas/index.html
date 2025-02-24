@@ -62,31 +62,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-<<<<<<< HEAD
-          <div
-            class="search-container d-flex align-items-center justify-content-md-start justify-content-center me-3"
-            id="buscador"
-          >
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <div class="search-container">
-                <input
-                  type="search"
-                  class="form-control form-control-dark text-bg-dark"
-                  placeholder="Buscar..."
-                  aria-label="Search"
-                />
-                <a href="#"
-                  ><i class="fas fa-search search-icon floating"></i
-                ></a>
-              </div>
-            </form>
-          </div>
-
-          <div class="text-end">
-            <a class="enlaces" href="login.html">Iniciar Sesión</a><span> | </span>
-            <a class="enlaces" href="registro.html">Registro</a>
-=======
-          <!-- Enlaces a la derecha -->
+          <!-- Enlaces-->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <!-- ms-auto alinea los enlaces a la derecha -->
@@ -94,13 +70,12 @@
                 <a class="nav-link active" href="login.html">Iniciar Sesión</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
+                <a class="nav-link" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
->>>>>>> 80d0ca6b7588702636902315edb144a17399e1db
           </div>
         </div>
       </nav>
@@ -110,8 +85,51 @@
     <main class="bg-dark text-white p-4">
       <!--saltar al contenido ppal-->
       <a class="salto" href="#principal">Ir al contenido principal</a>
+      <!-- Slider de trabajos realizados -->
+      <div
+        id="carouselExample"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/ad1.jpg" class="d-block w-100" alt="Imagen 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ad2.avif" class="d-block w-100" alt="Imagen 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ad3.jpg" class="d-block w-100" alt="Imagen 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/ad4.jpeg" class="d-block w-100" alt="Imagen 4" />
+          </div>
+        </div>
+        <!-- Botones de navegación -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
       <!--tarjetas servicios-->
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4"
+        id="servicios"
+      >
         <div class="col">
           <div class="servicio-card">
             <img
@@ -121,13 +139,6 @@
             />
             <h3>Fontanería</h3>
             <p class="precio-servicio">Desde 25 € / Hora</p>
-            <div class="estrellas">
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-            </div>
             <button class="info">Más información</button>
           </div>
         </div>
@@ -140,13 +151,6 @@
             />
             <h3>Electricidad</h3>
             <p class="precio-servicio">Desde 35 € / Hora</p>
-            <div class="estrellas">
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-            </div>
             <button class="info">Más información</button>
           </div>
         </div>
@@ -159,13 +163,6 @@
             />
             <h3>Carpintería</h3>
             <p class="precio-servicio">Desde 55 € / Hora</p>
-            <div class="estrellas">
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-            </div>
             <button class="info">Más información</button>
           </div>
         </div>
@@ -178,13 +175,6 @@
             />
             <h3>Albañilería</h3>
             <p class="precio-servicio">Desde 35 € / Hora</p>
-            <div class="estrellas">
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-            </div>
             <button class="info">Más información</button>
           </div>
         </div>
@@ -197,13 +187,6 @@
             />
             <h3>Pintura</h3>
             <p class="precio-servicio">Desde 30 € / Hora</p>
-            <div class="estrellas">
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-              <img src="img/star_vacia.png" alt="" />
-            </div>
             <button class="info">Más información</button>
           </div>
         </div>
@@ -212,18 +195,74 @@
             <img class="service-icon floating" src="./img/limpia.jpg" alt="" />
             <h3>Limpieza</h3>
             <p class="precio-servicio">Desde 20 € / Hora</p>
-            <div class="estrellas">
+            <!-- <div class="estrellas">
               <img src="img/star.png" alt="" />
               <img src="img/star.png" alt="" />
               <img src="img/star.png" alt="" />
               <img src="img/star.png" alt="" />
               <img src="img/star.png" alt="" />
-            </div>
+            </div> -->
             <button class="info">Más información</button>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Formulario de contacto -->
+    <section class="bg-dark text-white p-4" id="contacto">
+      <div class="container">
+        <h2 class="text-center mb-4">Contacta con nosotros</h2>
+        <form action="#" method="post">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="form-group mb-3">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Escribe aquí tu nombre"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="email">Correo electrónico</label>
+                <input
+                  type="email"
+                  class="form-control bg-dark text-white"
+                  id="email"
+                  name="email"
+                  placeholder="Escribe aquí tu correo electrónico"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control bg-dark text-white"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="Escribe aquí tu teléfono"
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  class="form-control bg-dark text-white"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="Escribe aquí tu mensaje"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white py-3">
