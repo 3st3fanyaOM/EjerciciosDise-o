@@ -40,38 +40,29 @@
   </head>
   <body class="cuerpo">
     <!-- Cabecera con menú de navegación -->
-
-    <header class="p-2 text-bg-dark" id="principal">
-      <div class="container-header">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          >
-            <svg
-              class="bi me-2"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
-            >
-              <use xlink:href="#bootstrap" />
-            </svg>
+    <header class="p-3 text-bg-dark" id="principal">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- Logo a la izquierda -->
+          <a class="navbar-brand" href="#">
+            <img src="./img/logotipo.jpg" alt="Logo" width="100" class="logo" />
+            <!-- Ajusta la ruta y el tamaño del logo -->
           </a>
 
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          <!-- Botón de menú (para pantallas pequeñas) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <li>
-              <a class="navbar-brand" href="index.html"
-                ><img src="./img/logotipo.jpg" alt="logo" class="logo"
-              /></a>
-            </li>
-          </ul>
-          <!--buscador-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+<<<<<<< HEAD
           <div
             class="search-container d-flex align-items-center justify-content-md-start justify-content-center me-3"
             id="buscador"
@@ -94,9 +85,25 @@
           <div class="text-end">
             <a class="enlaces" href="login.html">Iniciar Sesión</a><span> | </span>
             <a class="enlaces" href="registro.html">Registro</a>
+=======
+          <!-- Enlaces a la derecha -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <!-- ms-auto alinea los enlaces a la derecha -->
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+>>>>>>> 80d0ca6b7588702636902315edb144a17399e1db
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!--cuerpo de página-->
 
@@ -291,11 +298,15 @@
         data-autohide="false"
       >
         <div class="toast-body p-4 d-flex flex-column">
-          <h4>Cookie Warning</h4>
+          <h4>Aviso de Cookies</h4>
           <p>
-            This website stores data such as cookies to enable site
-            functionality including analytics and personalization. By using this
-            website, you automatically accept that we use cookies.
+            Las cookies de este sitio web se usan para personalizar el contenido
+            y los anuncios, ofrecer funciones de redes sociales y analizar el
+            tráfico. Además, compartimos información sobre el uso que haga del
+            sitio web con nuestros partners de redes sociales, publicidad y
+            análisis web, quienes pueden combinarla con otra información que les
+            haya proporcionado o que hayan recopilado a partir del uso que haya
+            hecho de sus servicios.
           </p>
           <div class="ml-auto">
             <button
@@ -303,10 +314,10 @@
               class="btn btn-outline-light mr-3"
               id="btnDeny"
             >
-              Deny
+              Rechazar
             </button>
             <button type="button" class="btn btn-light" id="btnAccept">
-              Accept
+              Aceptar
             </button>
           </div>
         </div>

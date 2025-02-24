@@ -112,11 +112,15 @@ button {
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 
   .card-body {
+    width: 100%;
+  }
+
+  .noticias {
+    flex-direction: column;
     width: 100%;
   }
 }
