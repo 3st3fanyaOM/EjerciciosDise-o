@@ -39,12 +39,18 @@ header {
   width: 300px;
 }
 
+
+.enlaces:hover{
+  color: #2f86c0;
+}
+
 .form-control {
   width: 100%;
   padding: 2%;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  color: #fff;
 }
 
 .search-icon {

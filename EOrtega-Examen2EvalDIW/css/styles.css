@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -45,8 +45,8 @@ header {
   justify-content: space-between;
 }
 
-#boton{
-    margin-top: 10px;
+#boton {
+  margin-top: 10px;
 }
 
 .nosotros {
@@ -97,7 +97,7 @@ button {
 }
 
 @media (max-width: 615px) {
-  .header {
+  header {
     flex-direction: column; /*deja el logo arriba y el menú abajo*/
   }
 
