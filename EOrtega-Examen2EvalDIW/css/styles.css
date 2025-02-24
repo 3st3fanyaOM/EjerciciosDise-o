@@ -45,8 +45,8 @@ header {
   justify-content: space-between;
 }
 
-#boton{
-    margin-top: 10px;
+#boton {
+  margin-top: 10px;
 }
 
 .nosotros {
@@ -112,11 +112,15 @@ button {
   }
 
   .card {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 
   .card-body {
+    width: 100%;
+  }
+
+  .noticias {
+    flex-direction: column;
     width: 100%;
   }
 }
