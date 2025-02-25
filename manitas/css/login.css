@@ -38,9 +38,19 @@ body {
   background-color: #ea4335;
 }
 
+.btn.btn-google:hover {
+  color: white !important;
+  background-color: #97261c;
+}
+
 .btn-facebook {
   color: white !important;
   background-color: #3b5998;
+}
+
+.btn.btn-facebook:hover {
+  color: white !important;
+  background-color: #2d4373;
 }
 
 /*ojito contraseña*/
