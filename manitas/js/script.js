@@ -100,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("jQuery cargado correctamente.");
     $(".info").click(function () {
       var target = $(this).attr("data-target"); // Obtiene el ID del detalle a mostrar
-
       $(".detalles-servicio").hide(); // Oculta cualquier otro detalle abierto
       $(target).fadeIn(); // Muestra solo el seleccionado
     });

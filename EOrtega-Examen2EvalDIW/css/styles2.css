@@ -1,0 +1,126 @@
+@charset "UTF-8";
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+/*contenido ppal*/
+.salto {
+  position: absolute;
+  top: -50px;
+}
+
+.logo {
+  width: 60px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rrss {
+  display: flex;
+  gap: 1em;
+}
+
+.rrss img {
+  width: 25px;
+}
+
+.noticias {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  gap: 1em;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#boton {
+  margin-top: 10px;
+}
+
+.nosotros {
+  display: none;
+  background-color: aqua;
+  color: #000;
+  width: 20%;
+}
+
+.bloque-cookies {
+  display: none;
+  background-color: rgb(13, 39, 87);
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-inne {
+  width: 100%;
+}
+
+.bloque-cookies a {
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  font-size: 1rem;
+  border: 2px solid black;
+  background-color: white;
+  padding: 1% 5%;
+}
+
+.gracias {
+  display: none;
+  background-color: blue;
+  color: white;
+  width: 50%;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 615px) {
+  header {
+    flex-direction: column; /*deja el logo arriba y el menú abajo*/
+  }
+  body {
+    flex-direction: column;
+    margin: 0;
+  }
+  .rrss {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-body {
+    width: 100%;
+  }
+  .noticias {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+body.oscuro {
+  background-color: black;
+}/*# sourceMappingURL=styles2.css.map */
