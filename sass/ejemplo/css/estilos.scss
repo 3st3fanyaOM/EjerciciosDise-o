@@ -1,0 +1,29 @@
+$negro: black;
+$verde: green;
+$gris: rgb(226, 215, 215);
+//listas
+$margenes: (0px, 20px, 10px, 20px);
+//mapas -array asociativo(clave, valor)
+$responsive: ("desktop": 1200px, "tablet": 1024px, "mobile": 600px);
+
+body {
+  background-color: $gris;
+}
+
+p {
+  color: $negro;
+}
+
+a {
+  color: $verde;
+}
+
+h1 {
+  margin-top: nth($margenes, 2); //cogería el valor 2 del aRRAY márgenes)
+}
+
+@media (max-width: map-get($responsive,"mobile")) {
+  .noticias {
+    width: 100%;
+  }
+}
