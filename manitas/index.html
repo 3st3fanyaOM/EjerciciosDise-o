@@ -67,7 +67,7 @@
             <ul class="navbar-nav ms-auto">
               <!-- ms-auto alinea los enlaces a la derecha -->
               <li class="nav-item">
-                <a class="nav-link active" href="login.html">Iniciar Sesión</a>
+                <a class="nav-link" href="login.html">Iniciar Sesión</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#servicios">Servicios</a>
@@ -139,7 +139,13 @@
             />
             <h3>Fontanería</h3>
             <p class="precio-servicio">Desde 25 € / Hora</p>
-            <button class="info">Más información</button>
+            <button class="info" data-target="#detalle-fontaneria">
+              Más información
+            </button>
+            <div class="detalles-servicio">
+              <h2></h2>
+              <button class="cerrar-info">Atrás</button>
+            </div>
           </div>
         </div>
         <div class="col">
@@ -163,7 +169,9 @@
             />
             <h3>Carpintería</h3>
             <p class="precio-servicio">Desde 55 € / Hora</p>
-            <button class="info">Más información</button>
+            <button class="info" data-target="#detalle-carpinteria">
+              Más información
+            </button>
           </div>
         </div>
         <div class="col">
@@ -175,7 +183,9 @@
             />
             <h3>Albañilería</h3>
             <p class="precio-servicio">Desde 35 € / Hora</p>
-            <button class="info">Más información</button>
+            <button class="info" data-target="#detalle-albañileria">
+              Más información
+            </button>
           </div>
         </div>
         <div class="col">
@@ -187,7 +197,9 @@
             />
             <h3>Pintura</h3>
             <p class="precio-servicio">Desde 30 € / Hora</p>
-            <button class="info">Más información</button>
+            <button class="info" data-target="#detalle-pintura">
+              Más información
+            </button>
           </div>
         </div>
         <div class="col">
@@ -195,74 +207,66 @@
             <img class="service-icon floating" src="./img/limpia.jpg" alt="" />
             <h3>Limpieza</h3>
             <p class="precio-servicio">Desde 20 € / Hora</p>
-            <!-- <div class="estrellas">
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-              <img src="img/star.png" alt="" />
-            </div> -->
             <button class="info">Más información</button>
           </div>
         </div>
       </div>
-    </main>
-
-    <!-- Formulario de contacto -->
-    <section class="bg-dark text-white p-4" id="contacto">
-      <div class="container">
-        <h2 class="text-center mb-4">Contacta con nosotros</h2>
-        <form action="#" method="post">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <div class="form-group mb-3">
-                <label for="nombre">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control bg-dark text-white"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Escribe aquí tu nombre"
-                />
+      <!-- Formulario de contacto -->
+      <section class="bg-dark text-white p-4" id="contacto">
+        <div class="container">
+          <h2 class="text-center mb-4">Contacta con nosotros</h2>
+          <form action="#" method="post">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="form-group mb-3">
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-white"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe aquí tu nombre"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="email">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control bg-dark text-white"
+                    id="email"
+                    name="email"
+                    placeholder="Escribe aquí tu correo electrónico"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control bg-dark text-white"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Escribe aquí tu teléfono"
+                  />
+                </div>
+                <div class="form-group mb-3">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    class="form-control bg-dark text-white"
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="Escribe aquí tu mensaje"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Enviar
+                </button>
               </div>
-              <div class="form-group mb-3">
-                <label for="email">Correo electrónico</label>
-                <input
-                  type="email"
-                  class="form-control bg-dark text-white"
-                  id="email"
-                  name="email"
-                  placeholder="Escribe aquí tu correo electrónico"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="telefono">Teléfono</label>
-                <input
-                  type="tel"
-                  class="form-control bg-dark text-white"
-                  id="telefono"
-                  name="telefono"
-                  placeholder="Escribe aquí tu teléfono"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  class="form-control bg-dark text-white"
-                  id="mensaje"
-                  name="mensaje"
-                  rows="4"
-                  placeholder="Escribe aquí tu mensaje"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Enviar
-              </button>
             </div>
-          </div>
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white py-3">
@@ -345,7 +349,8 @@
             sitio web con nuestros partners de redes sociales, publicidad y
             análisis web, quienes pueden combinarla con otra información que les
             haya proporcionado o que hayan recopilado a partir del uso que haya
-            hecho de sus servicios.
+            hecho de sus servicios. Puedes consultar nuestra
+            <a href="politica-cookies.html">Política de cookies</a>.
           </p>
           <div class="ml-auto">
             <button
@@ -362,6 +367,9 @@
         </div>
       </div>
     </div>
+    <button id="btnSubir" class="btn btn-primary">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
     <!--script de bootstrap-->

@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const togglePassword = document.getElementById("togglePassword");
   const passwordInput = document.getElementById("floatingPassword");
   const eyeIcon = document.getElementById("eyeIcon");
-  const btnDeny = document.getElementById("btnDeny");
-  const btnAccept = document.getElementById("btnAccept");
+  var btnDeny = document.getElementById("btnDeny");
+  var btnAccept = document.getElementById("btnAccept");
 
   if (togglePassword && passwordInput && eyeIcon) {
     togglePassword.addEventListener("click", () => {
@@ -53,7 +53,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  if (btnDeny && btnAccept) {
+  // Ejecutar al cargar la página para comprobar si ya se aceptaron las cookies
+  cookieConsent();
+
+  // Agregar eventos solo si los botones existen
+  btnDeny = document.getElementById("btnDeny");
+  btnAccept = document.getElementById("btnAccept");
+
+  if (btnDeny) {
     btnDeny.addEventListener("click", () => {
       eraseCookie("allowCookies");
       var toastEl = document.querySelector(".toast");
@@ -62,7 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
         toast.hide();
       }
     });
+  }
 
+  if (btnAccept) {
     btnAccept.addEventListener("click", () => {
       setCookie("allowCookies", "1", 7);
       var toastEl = document.querySelector(".toast");
@@ -71,8 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
         toast.hide();
       }
     });
-
-    cookieConsent();
   }
 
   // Botón de reseteo solo si existe en la página
@@ -88,5 +95,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  
+  /*funciones para cargar detalle servicio*/
+  if (window.jQuery) {
+    console.log("jQuery cargado correctamente.");
+    $(".info").click(function () {
+      var target = $(this).attr("data-target"); // Obtiene el ID del detalle a mostrar
+
+      $(".detalles-servicio").hide(); // Oculta cualquier otro detalle abierto
+      $(target).fadeIn(); // Muestra solo el seleccionado
+    });
+
+    $(".cerrar-info").click(function () {
+      $(this).closest(".detalles-servicio").fadeOut(); // Oculta el modal al hacer clic en X
+    });
+  } else {
+    console.error(
+      "jQuery no está cargado. Asegúrate de incluir jQuery en tu HTML."
+    );
+  }
+
+  /* boton subir */
+  var btnSubir = $("#btnSubir");
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btnSubir.fadeIn();
+    } else {
+      btnSubir.fadeOut();
+    }
+  });
+
+  btnSubir.click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
 });
