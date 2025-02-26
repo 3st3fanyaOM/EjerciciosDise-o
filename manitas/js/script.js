@@ -98,19 +98,26 @@ document.addEventListener("DOMContentLoaded", function () {
   /*funciones para cargar detalle servicio*/
   if (window.jQuery) {
     console.log("jQuery cargado correctamente.");
+
+    // Mostrar detalles del servicio
     $(".info").click(function () {
-      var target = $(this).attr("data-target"); // Obtiene el ID del detalle a mostrar
-      $(".detalles-servicio").hide(); // Oculta cualquier otro detalle abierto
-      $(target).fadeIn(); // Muestra solo el seleccionado
+      var target = $(this).data("target");
+      $("#servicios")
+        .addClass("flex-mode ocultar-tarjetas")
+        .find(".detalles-servicio")
+        .removeClass("show");
+      $(target).addClass("show").css("width", "100%"); // Muestra el detalle seleccionado
     });
 
+    // Ocultar detalles y volver al grid
     $(".cerrar-info").click(function () {
-      $(this).closest(".detalles-servicio").fadeOut(); // Oculta el modal al hacer clic en X
+      $("#servicios")
+        .removeClass("flex-mode ocultar-tarjetas") // Vuelve al grid y muestra las tarjetas
+        .find(".detalles-servicio") // Busca todos los detalles
+        .removeClass("show"); // Oculta el detalle visible
     });
   } else {
-    console.error(
-      "jQuery no está cargado. Asegúrate de incluir jQuery en tu HTML."
-    );
+    console.log("jQuery no está cargando");
   }
 
   /* boton subir */

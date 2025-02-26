@@ -125,47 +125,50 @@
           <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
-      <!--tarjetas servicios-->
+      <!-- Tarjetas de servicios -->
       <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3"
         id="servicios"
       >
+        <!-- Fontanería -->
         <div class="col">
           <div class="servicio-card">
             <img
               class="service-icon floating"
               src="./img/FONTANERO-SUELDO.jpg"
-              alt=""
+              alt="Icono de fontanería"
             />
             <h3>Fontanería</h3>
             <p class="precio-servicio">Desde 25 € / Hora</p>
             <button class="info" data-target="#detalle-fontaneria">
               Más información
             </button>
-            <div class="detalles-servicio">
-              <h2></h2>
-              <button class="cerrar-info">Atrás</button>
-            </div>
           </div>
         </div>
+
+        <!-- Electricidad -->
         <div class="col">
           <div class="servicio-card">
             <img
               class="service-icon floating"
               src="./img/diferencias-electricista.webp"
-              alt=""
+              alt="Icono de electricidad"
             />
             <h3>Electricidad</h3>
             <p class="precio-servicio">Desde 35 € / Hora</p>
-            <button class="info">Más información</button>
+            <button class="info" data-target="#detalle-electricidad">
+              Más información
+            </button>
           </div>
         </div>
+
+        <!-- Carpintería -->
         <div class="col">
           <div class="servicio-card">
             <img
               class="service-icon floating"
               src="./img/carpinteroc.png"
-              alt=""
+              alt="Icono de carpintería"
             />
             <h3>Carpintería</h3>
             <p class="precio-servicio">Desde 55 € / Hora</p>
@@ -174,12 +177,14 @@
             </button>
           </div>
         </div>
+
+        <!-- Albañilería -->
         <div class="col">
           <div class="servicio-card">
             <img
               class="service-icon floating"
               src="./img/albanil-.jpeg"
-              alt=""
+              alt="Icono de albañilería"
             />
             <h3>Albañilería</h3>
             <p class="precio-servicio">Desde 35 € / Hora</p>
@@ -188,12 +193,14 @@
             </button>
           </div>
         </div>
+
+        <!-- Pintura -->
         <div class="col">
           <div class="servicio-card">
             <img
               class="service-icon floating"
               src="./img/hombre-pinta-.jpg"
-              alt=""
+              alt="Icono de pintura"
             />
             <h3>Pintura</h3>
             <p class="precio-servicio">Desde 30 € / Hora</p>
@@ -202,15 +209,97 @@
             </button>
           </div>
         </div>
+
+        <!-- Limpieza -->
         <div class="col">
           <div class="servicio-card">
-            <img class="service-icon floating" src="./img/limpia.jpg" alt="" />
+            <img
+              class="service-icon floating"
+              src="./img/limpia.jpg"
+              alt="Icono de limpieza"
+            />
             <h3>Limpieza</h3>
             <p class="precio-servicio">Desde 20 € / Hora</p>
-            <button class="info">Más información</button>
+            <button class="info" data-target="#detalle-limpieza">
+              Más información
+            </button>
           </div>
         </div>
+        <!--detalles-servicios-->
+        <div class="detalles-servicio" id="detalle-limpieza">
+          <h2>Limpieza</h2>
+          <p>
+            Servicios de limpieza para hogares, oficinas y locales comerciales.
+            Profesionales con productos ecológicos y eficaces.
+          </p>
+          <button class="cerrar-info">Atrás</button>
+        </div>
+        <div class="detalles-servicio" id="detalle-fontaneria">
+          <h2>Fontanería</h2>
+          <p>
+            Servicios de fontanería para reparaciones, instalaciones y
+            mantenimiento en hogares y negocios. Soluciones rápidas y
+            eficientes.
+          </p>
+          <button class="cerrar-info">Atrás</button>
+        </div>
+        <div class="detalles-servicio" id="detalle-pintura">
+          <h2>Pintura</h2>
+          <p>
+            Servicios de pintura para interiores y exteriores. Acabados
+            profesionales y uso de materiales de alta calidad.
+          </p>
+          <button class="cerrar-info">Atrás</button>
+        </div>
+        <div class="detalles-servicio" id="detalle-albañileria">
+          <h2>Albañilería</h2>
+          <p>
+            Construcción, reformas y reparaciones en obra. Trabajos de calidad
+            para hogares y espacios comerciales.
+          </p>
+          <button class="cerrar-info">Atrás</button>
+        </div>
+        <div class="detalles-servicio" id="detalle-carpinteria">
+          <h2>Carpintería</h2>
+          <p>
+            Trabajos de carpintería en madera: muebles a medida, reparaciones y
+            restauraciones. Calidad y diseño personalizado.
+          </p>
+          <button class="cerrar-info">Atrás</button>
+        </div>
+        <div class="detalles-servicio" id="detalle-electricidad">
+          <!-- Encabezado del servicio -->
+          <div class="detalle-header">
+            <h2>Electricidad</h2>
+            <p class="eslogan">Soluciones eléctricas seguras y eficientes</p>
+          </div>
+        
+          <!-- Descripción del servicio -->
+          <div class="detalle-descripcion">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+              Nuestro servicio de electricidad incluye instalaciones, reparaciones y revisiones de seguridad para hogares, oficinas y locales comerciales. Garantizamos un trabajo profesional y de calidad, cumpliendo con todas las normativas vigentes.
+            </p>
+            <ul>
+              <li>Instalación de sistemas eléctricos nuevos.</li>
+              <li>Reparación de cortocircuitos y fallas eléctricas.</li>
+              <li>Revisión y mantenimiento de cuadros eléctricos.</li>
+              <li>Instalación de luces, tomas y enchufes.</li>
+              <li>Asesoría en eficiencia energética.</li>
+            </ul>
+          </div>
+        
+          <!-- Precios y ofertas -->
+          <div class="detalle-precios">
+            <h3>Nuestros precios</h3>
+            <p class="precio-servicio">Desde 35 € / Hora</p>
+            <p class="oferta">¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.</p>
+          </div>
+          <!-- Botón para volver -->
+          <button class="cerrar-info">Atrás</button>
+        </div>
       </div>
+
       <!-- Formulario de contacto -->
       <section class="bg-dark text-white p-4" id="contacto">
         <div class="container">
@@ -274,7 +363,7 @@
         <div class="row">
           <!-- Sección 1: Logo y Descripción -->
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h5 class="text-uppercase fw-bold mb-4">manitas</h5>
+            <h5 class="text-uppercase fw-bold mb-4">Servihogar</h5>
             <p>
               Soluciones innovadoras para tus necesidades. Comprometidos con la
               calidad y el servicio.
@@ -303,15 +392,15 @@
           </div>
 
           <!-- Sección 3: Contacto -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
             <h5 class="text-uppercase fw-bold mb-4">Contacto</h5>
-            <p><i class="fas fa-home me-3"></i> Calle Francia, Sevilla</p>
-            <p><i class="fas fa-envelope me-3"></i> contacto@manitas.com</p>
+            <p><i class="fas fa-home me-3"></i> Calle Francia 6, Sevilla</p>
+            <p><i class="fas fa-envelope me-3"></i> contacto@servihogar.com</p>
             <p><i class="fas fa-phone me-3"></i> +954332211</p>
           </div>
 
           <!-- Sección 4: Redes sociales -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+          <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
             <h5 class="text-uppercase fw-bold mb-4">Síguenos</h5>
             <a href="#" class="text-white me-4"
               ><i class="fab fa-facebook-f"></i
@@ -370,6 +459,7 @@
     <button id="btnSubir" class="btn btn-primary">
       <i class="fas fa-arrow-up"></i>
     </button>
+    <!--scripts de bootstrap y jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/script.js"></script>
     <!--script de bootstrap-->
