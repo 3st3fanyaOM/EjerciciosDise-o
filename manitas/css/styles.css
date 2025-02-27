@@ -45,7 +45,7 @@ input.form-control.form-control-dark.text-bg-dark::placeholder {
 
 .carousel-item img {
   width: 100%;
-  height: 400px; /* Altura fija para todas las imágenes */
+  height: 500px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
@@ -118,22 +118,19 @@ main.bg-dark {
 .detalles-servicio {
   display: none; /* Lo oculta inicialmente */
   width: 90%;
+  height: 100%;
   padding: 1em;
   background: #3b3e42;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999; /* Asegura que los detalles se superpongan a las tarjetas */
+  position: relative;
+  z-index: 1000; /* Asegura que los detalles se superpongan a las tarjetas */
   transition: all 0.3s ease;
-  border: 1px solid red;
 }
 
 .detalles-servicio.show {
   display: block;
+  margin-bottom: 1em;
 }
 
 .detalle-header {
@@ -163,7 +160,7 @@ main.bg-dark {
 .detalle-cta h3 {
   font-size: 1.5em;
   margin-bottom: 0.5em;
-  color: #ffcc00;
+  color: #ff3c00;
 }
 
 .detalle-descripcion ul {
@@ -179,7 +176,7 @@ main.bg-dark {
 .detalle-precios .precio-servicio {
   font-size: 1.8em;
   font-weight: bold;
-  color: #ffcc00;
+  color: #ff3700;
 }
 
 .detalle-precios .oferta {
@@ -194,17 +191,17 @@ main.bg-dark {
 .cerrar-info {
   background: #ff4444;
   color: #fff;
-  padding: 0.8em 2em;
+  padding: 1em 1em;
   border: none;
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
-  margin-top: 1.5em;
+  margin-top: 1em;
   transition: background 0.3s ease;
 }
 
 .cerrar-info:hover {
-  background: #cc0000;
+  background: #2b45da;
 }
 
 .servicio-card:hover {
@@ -287,10 +284,4 @@ main.bg-dark {
 
 footer {
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 500px) {
-  .navbar-brand img.logo {
-    height: 100px; /* Aumenta el tamaño del logo */
-  }
 }

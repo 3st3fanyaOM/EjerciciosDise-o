@@ -3,7 +3,6 @@
 ## `Index.html` - Página Principal
 
 - **Cabecera**:
-
   - Logo de la empresa.
   - Enlaces.
 
@@ -22,6 +21,11 @@
   - Enlaces de interés.
   - Sección de contacto (Ubicación de la empresa).
   - Apartado para redes sociales.
+  - Botón para subir (facilidad para el usuario).
+
+- **Bloque de Cookies**
+  - Advierte al usuario y le permite aceptar o rechazar.
+  - Contiene un enlace a la página de Política de Cookies.
 
 ---
 
@@ -34,13 +38,15 @@
   - Botón para iniciar sesión.
 
 - **Enlace para Crear Cuenta**:
+  - Redirige a página de registro de usuario.
 
 - **Inicio de Sesión con Redes Sociales**:
-
   - Sección en la parte inferior con dos botones para iniciar sesión mediante Facebook y Google.
 
+---
+
 - **Notas**:
-  - No se ha incluido apartado responsive, ya que se ha utilizado Bootstrap, que lo gestiona automáticamente.
+  - No se ha incluido apartado responsive, ya que se ha utilizado Bootstrap, que lo gestiona automáticamente. ***Arreglos en el responsive (aumento de logo).
   - Exceptuando el apartado servicios que he usado GRID.
   - Algunos estilos de Bootstrap han sido pisados con hojas de estilo aparte.
   - Colores utilizados: #212529, #3B3E42, #FF0000, #ffffff, #5E5EEB, #203143, #0D6EFD, #EA4335, #3B5998.

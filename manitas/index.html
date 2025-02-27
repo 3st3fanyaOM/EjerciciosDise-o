@@ -14,7 +14,7 @@
 
     <link
       rel="shortcut icon"
-      href="./img/icons8-m-50 (1).png"
+      href="./img/icons8-m-50.png"
       type="image/x-icon"
     />
     <!--favicon-->
@@ -35,7 +35,7 @@
       rel="stylesheet"
     />
     <!--hoja de estilos personalizados-->
-
+    <link rel="stylesheet" href="./css/styles-responsive.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body class="cuerpo">
@@ -46,7 +46,6 @@
           <!-- Logo a la izquierda -->
           <a class="navbar-brand" href="#">
             <img src="./img/logotipo.jpg" alt="Logo" width="100" class="logo" />
-            <!-- Ajusta la ruta y el tamaño del logo -->
           </a>
 
           <!-- Botón de menú (para pantallas pequeñas) -->
@@ -131,7 +130,7 @@
         id="servicios"
       >
         <!-- Fontanería -->
-        <div class="col">
+        <div class="col text-center">
           <div class="servicio-card">
             <img
               class="service-icon floating"
@@ -147,7 +146,7 @@
         </div>
 
         <!-- Electricidad -->
-        <div class="col">
+        <div class="col text-center">
           <div class="servicio-card">
             <img
               class="service-icon floating"
@@ -163,7 +162,7 @@
         </div>
 
         <!-- Carpintería -->
-        <div class="col">
+        <div class="col text-center">
           <div class="servicio-card">
             <img
               class="service-icon floating"
@@ -179,7 +178,7 @@
         </div>
 
         <!-- Albañilería -->
-        <div class="col">
+        <div class="col text-center">
           <div class="servicio-card">
             <img
               class="service-icon floating"
@@ -195,7 +194,7 @@
         </div>
 
         <!-- Pintura -->
-        <div class="col">
+        <div class="col text-center">
           <div class="servicio-card">
             <img
               class="service-icon floating"
@@ -211,7 +210,7 @@
         </div>
 
         <!-- Limpieza -->
-        <div class="col">
+        <div class="col text-center">
           <div class="servicio-card">
             <img
               class="service-icon floating"
@@ -226,59 +225,173 @@
           </div>
         </div>
         <!--detalles-servicios-->
+        <!--limpieza-->
         <div class="detalles-servicio" id="detalle-limpieza">
-          <h2>Limpieza</h2>
-          <p>
-            Servicios de limpieza para hogares, oficinas y locales comerciales.
-            Profesionales con productos ecológicos y eficaces.
-          </p>
+          <div class="detalle-header">
+            <h2>Limpieza</h2>
+            <p class="eslogan">Espacios impecables y saludables</p>
+          </div>
+          <div class="detalle-descripcion">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+              Servicios de limpieza profesional para hogares y negocios. Nos
+              encargamos de la higiene y desinfección con productos de alta
+              calidad.
+            </p>
+            <ul>
+              <li>Limpieza de oficinas y locales comerciales.</li>
+              <li>Mantenimiento de comunidades y edificios.</li>
+              <li>Limpieza profunda de cocinas y baños.</li>
+              <li>Aspirado y desinfección de alfombras.</li>
+              <li>Desinfección con productos ecológicos.</li>
+            </ul>
+          </div>
+          <div class="detalle-precios">
+            <h3>Nuestros precios</h3>
+            <p class="precio-servicio">Desde 20 € / Hora</p>
+            <p class="oferta">
+              ¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.
+            </p>
+          </div>
           <button class="cerrar-info">Atrás</button>
         </div>
+        <!--fontaneria-->
         <div class="detalles-servicio" id="detalle-fontaneria">
-          <h2>Fontanería</h2>
-          <p>
-            Servicios de fontanería para reparaciones, instalaciones y
-            mantenimiento en hogares y negocios. Soluciones rápidas y
-            eficientes.
-          </p>
+          <div class="detalle-header">
+            <h2>Fontanería</h2>
+            <p class="eslogan">
+              Soluciones eficientes para el agua en tu hogar
+            </p>
+          </div>
+          <div class="detalle-descripcion">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+              Servicios de fontanería para instalación, reparación y
+              mantenimiento de sistemas de agua. Trabajamos con tuberías,
+              grifos, desagües y más.
+            </p>
+            <ul>
+              <li>Reparación de fugas y averías.</li>
+              <li>Instalación de sanitarios y grifería.</li>
+              <li>Desatascos de tuberías y desagües.</li>
+              <li>Mantenimiento de sistemas de fontanería.</li>
+              <li>Asesoría en ahorro de agua.</li>
+            </ul>
+          </div>
+          <div class="detalle-precios">
+            <h3>Nuestros precios</h3>
+            <p class="precio-servicio">Desde 35 € / Hora</p>
+            <p class="oferta">
+              ¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.
+            </p>
+          </div>
           <button class="cerrar-info">Atrás</button>
         </div>
+        <!--pintura-->
         <div class="detalles-servicio" id="detalle-pintura">
-          <h2>Pintura</h2>
-          <p>
-            Servicios de pintura para interiores y exteriores. Acabados
-            profesionales y uso de materiales de alta calidad.
-          </p>
+          <div class="detalle-header">
+            <h2>Pintura</h2>
+            <p class="eslogan">Colores y acabados perfectos para tu espacio</p>
+          </div>
+          <div class="detalle-descripcion">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+              Servicios de pintura profesional para interiores y exteriores.
+              Usamos materiales de primera calidad para garantizar un acabado
+              duradero y estético.
+            </p>
+            <ul>
+              <li>Pintura de interiores y exteriores.</li>
+              <li>Aplicación de esmaltes y barnices.</li>
+              <li>Alisado y preparación de superficies.</li>
+              <li>Pintura decorativa y efectos especiales.</li>
+              <li>Restauración de fachadas.</li>
+            </ul>
+          </div>
+          <div class="detalle-precios">
+            <h3>Nuestros precios</h3>
+            <p class="precio-servicio">Desde 25 € / Hora</p>
+            <p class="oferta">
+              ¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.
+            </p>
+          </div>
           <button class="cerrar-info">Atrás</button>
         </div>
+        <!--albañileria-->
         <div class="detalles-servicio" id="detalle-albañileria">
-          <h2>Albañilería</h2>
-          <p>
-            Construcción, reformas y reparaciones en obra. Trabajos de calidad
-            para hogares y espacios comerciales.
-          </p>
+          <div class="detalle-header">
+            <h2>Albañilería</h2>
+            <p class="eslogan">
+              Construcción y reformas con acabados perfectos
+            </p>
+          </div>
+          <div class="detalle-descripcion">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+              Servicios de albañilería para reformas y construcciones en hogares
+              y comercios. Garantizamos materiales de calidad y trabajo
+              profesional.
+            </p>
+            <ul>
+              <li>Construcción de muros y tabiques.</li>
+              <li>Reparaciones y reformas estructurales.</li>
+              <li>Enyesado y acabado de paredes.</li>
+              <li>Colocación de azulejos y baldosas.</li>
+              <li>Soluciones en impermeabilización.</li>
+            </ul>
+          </div>
+          <div class="detalle-precios">
+            <h3>Nuestros precios</h3>
+            <p class="precio-servicio">Desde 40 € / Hora</p>
+            <p class="oferta">
+              ¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.
+            </p>
+          </div>
           <button class="cerrar-info">Atrás</button>
         </div>
+        <!--carpinteria-->
         <div class="detalles-servicio" id="detalle-carpinteria">
-          <h2>Carpintería</h2>
-          <p>
-            Trabajos de carpintería en madera: muebles a medida, reparaciones y
-            restauraciones. Calidad y diseño personalizado.
-          </p>
+          <div class="detalle-header">
+            <h2>Carpintería</h2>
+            <p class="eslogan">Diseño y fabricación en madera con calidad</p>
+          </div>
+          <div class="detalle-descripcion">
+            <h3>¿Qué ofrecemos?</h3>
+            <p>
+              Servicio de carpintería para fabricación, reparación y
+              mantenimiento de estructuras en madera. Trabajamos con materiales
+              de alta calidad y técnicas especializadas.
+            </p>
+            <ul>
+              <li>Fabricación de muebles a medida.</li>
+              <li>Instalación de puertas y ventanas de madera.</li>
+              <li>Reparación y mantenimiento de estructuras de madera.</li>
+              <li>Armado de muebles y estanterías.</li>
+              <li>Tratamientos para conservación de madera.</li>
+            </ul>
+          </div>
+          <div class="detalle-precios">
+            <h3>Nuestros precios</h3>
+            <p class="precio-servicio">Desde 30 € / Hora</p>
+            <p class="oferta">
+              ¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.
+            </p>
+          </div>
           <button class="cerrar-info">Atrás</button>
         </div>
+        <!--electricidad-->
         <div class="detalles-servicio" id="detalle-electricidad">
-          <!-- Encabezado del servicio -->
           <div class="detalle-header">
             <h2>Electricidad</h2>
             <p class="eslogan">Soluciones eléctricas seguras y eficientes</p>
           </div>
-        
-          <!-- Descripción del servicio -->
           <div class="detalle-descripcion">
             <h3>¿Qué ofrecemos?</h3>
             <p>
-              Nuestro servicio de electricidad incluye instalaciones, reparaciones y revisiones de seguridad para hogares, oficinas y locales comerciales. Garantizamos un trabajo profesional y de calidad, cumpliendo con todas las normativas vigentes.
+              Nuestro servicio de electricidad incluye instalaciones,
+              reparaciones y revisiones de seguridad para hogares, oficinas y
+              locales comerciales. Garantizamos un trabajo profesional y de
+              calidad, cumpliendo con todas las normativas vigentes.
             </p>
             <ul>
               <li>Instalación de sistemas eléctricos nuevos.</li>
@@ -288,26 +401,25 @@
               <li>Asesoría en eficiencia energética.</li>
             </ul>
           </div>
-        
-          <!-- Precios y ofertas -->
           <div class="detalle-precios">
             <h3>Nuestros precios</h3>
             <p class="precio-servicio">Desde 35 € / Hora</p>
-            <p class="oferta">¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.</p>
+            <p class="oferta">
+              ¡Oferta especial! Contrata 5 horas y obtén un 10% de descuento.
+            </p>
           </div>
-          <!-- Botón para volver -->
           <button class="cerrar-info">Atrás</button>
         </div>
       </div>
 
       <!-- Formulario de contacto -->
-      <section class="bg-dark text-white p-4" id="contacto">
+      <section class="bg-dark text-white p-4 mt-2" id="contacto">
         <div class="container">
           <h2 class="text-center mb-4">Contacta con nosotros</h2>
           <form action="#" method="post">
             <div class="row justify-content-center">
               <div class="col-md-8">
-                <div class="form-group mb-3">
+                <div class="form-group mb-3" id="form-group">
                   <label for="nombre">Nombre</label>
                   <input
                     type="text"
@@ -317,7 +429,7 @@
                     placeholder="Escribe aquí tu nombre"
                   />
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group mb-3" id="form-group">
                   <label for="email">Correo electrónico</label>
                   <input
                     type="email"
@@ -327,7 +439,7 @@
                     placeholder="Escribe aquí tu correo electrónico"
                   />
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group mb-3" id="form-group">
                   <label for="telefono">Teléfono</label>
                   <input
                     type="tel"
@@ -337,7 +449,7 @@
                     placeholder="Escribe aquí tu teléfono"
                   />
                 </div>
-                <div class="form-group mb-3">
+                <div class="form-group mb-3" id="form-group">
                   <label for="mensaje">Mensaje</label>
                   <textarea
                     class="form-control bg-dark text-white"

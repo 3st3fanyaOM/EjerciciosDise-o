@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var btnDeny = document.getElementById("btnDeny");
   var btnAccept = document.getElementById("btnAccept");
 
+  // Mostrar u ocultar contraseña al hacer clic en el ícono de ojito
   if (togglePassword && passwordInput && eyeIcon) {
     togglePassword.addEventListener("click", () => {
       // Alternar entre texto y contraseña
@@ -125,13 +126,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
-      btnSubir.fadeIn();
+      btnSubir.fadeIn(); //btn desaparece al subir
     } else {
-      btnSubir.fadeOut();
+      btnSubir.fadeOut(); //btn aparece al hacer scroll hacia abajo
     }
   });
 
   btnSubir.click(function () {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
+    $("html, body").animate({ scrollTop: 0 }, "slow"); //cuando lo pulsas sube suavemente
   });
 });
