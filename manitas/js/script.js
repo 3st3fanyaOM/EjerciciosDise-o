@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!getCookie("allowCookies")) {
       var toastEl = document.querySelector(".toast");
       if (toastEl) {
-        var toast = new bootstrap.Toast(toastEl);
+        var toast = new bootstrap.Toast(toastEl, { autohide: false }); //hace que el toast no se cierre solo
         toast.show();
       }
     }
@@ -135,4 +135,88 @@ document.addEventListener("DOMContentLoaded", function () {
   btnSubir.click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow"); //cuando lo pulsas sube suavemente
   });
+
+  //comprobacion de campos vacios en login
+  $("input").on("blur", function () {
+    console.log("test");
+    if ($(this).val().trim() === "") {
+      $(this).css({
+        border: "2px solid #e91f1f",
+      });
+      $(this).siblings(".error-message").show();
+    } else {
+      $(this).css({
+        border: "",
+        "background-color": "",
+      });
+      $(this).siblings(".error-message").hide();
+    }
+  });
+
+  //boton deshabilitado hasta que haya email y contraseña
+  //login
+  const $emailInput = $("#floatingInput");
+  const $passwordInput = $("#floatingPassword");
+  const $submitButton = $(".btn-login");
+  //contacto
+  const $nombre = $("#nombre");
+  const $email = $("#email");
+  const $telefono = $("#telefono");
+  const $mensaje = $("#mensaje");
+  const $contactoBtn = $("#btn-contacto");
+
+  // Función login
+  function checkLogin() {
+    const emailValue = $emailInput.val().trim(); // valor de email
+    const passwordValue = $passwordInput.val().trim(); // valor de pwd
+
+    // Habilita el botón
+    if (emailValue !== "" && passwordValue !== "") {
+      $submitButton.prop("disabled", false); // Habilita el botón
+    } else {
+      $submitButton.prop("disabled", true); // Deshabilita el botón
+    }
+  }
+
+  // Función contacto
+  function checkInputs() {
+    const nombreValue = $nombre.val().trim(); // valor de nombre
+    const emailValue = $email.val().trim(); // valor de email
+    const telefonoValue = $telefono.val().trim(); // valor de teléfono
+    const mensajeValue = $mensaje.val().trim(); // valor de mensaje
+
+    // Habilita el botón
+    if (
+      nombreValue !== "" &&
+      emailValue !== "" &&
+      telefonoValue !== "" &&
+      mensajeValue !== ""
+    ) {
+      $contactoBtn.prop("disabled", false); // Habilita el botón
+    } else {
+      $contactoBtn.prop("disabled", true); // Deshabilita el botón
+    }
+  }
+
+  //mostrar confirmación de envio de mensaje
+  $contactoBtn.click(function (e) {
+    const $mensajeEnviado = $(".enviado"); //mensaje de confirmación
+    e.preventDefault();
+
+    if (!$contactoBtn.prop("disabled")) {
+      $("#formulario-contacto").fadeOut(); //oculta el formulario
+      $mensajeEnviado.fadeIn();
+      setTimeout(function () {
+        $mensajeEnviado.fadeOut();
+      }, 5000); //mensaje de confirmación desaparece después de 3 segundos
+    }
+  });
+
+  // Escucha los eventos de cambio en los campos de entrada
+  $emailInput.on("input", checkLogin);
+  $passwordInput.on("input", checkLogin);
+  $nombre.on("input", checkInputs);
+  $email.on("input", checkInputs);
+  $telefono.on("input", checkInputs);
+  $mensaje.on("input", checkInputs);
 });

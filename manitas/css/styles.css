@@ -29,6 +29,16 @@ header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
+.nav-link:hover {
+  color: #2f86c0 !important;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 input.form-control.form-control-dark.text-bg-dark::placeholder {
   color: #fff;
 }
@@ -69,6 +79,48 @@ input.form-control.form-control-dark.text-bg-dark::placeholder {
   transform: translateY(-50%);
   font-size: 18px;
   color: #555;
+}
+
+/* Estilos para que el menú se abra hacia la derecha */
+.navbar-collapse-right.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse-right.collapsing {
+  position: absolute;
+  right: 0;
+  top: 100%; /* Ajusta la posición vertical según sea necesario */
+  width: 100%; /* Ancho del menú desplegable */
+  max-width: 300px; /* Ancho máximo del menú */
+  height: auto !important;
+  transition: right 0.3s ease;
+}
+
+.navbar-collapse-right.collapse.show {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%; /* Ajusta la posición vertical según sea necesario */
+  width: 75%; /* Ancho del menú desplegable */
+  max-width: 300px; /* Ancho máximo del menú */
+  background-color: rgba(45, 44, 44, 0.8); /* Color de fondo del menú */
+  z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+/* Añadir margen a los enlaces dentro del menú desplegable */
+.navbar-collapse-right .navbar-nav .nav-item {
+  margin: 8px 0; /* Margen superior e inferior */
+}
+
+.navbar-collapse-right .navbar-nav .nav-link {
+  padding: 8px 16px; /* Padding interno para los enlaces */
+  color: #fff; /* Color del texto */
+  text-align: right; /* Alinear el texto a la derecha */
+}
+
+/* Ajustar el menú desplegable para que no esté pegado al borde */
+.navbar-collapse-right.collapse.show {
+  padding: 10px; /* Padding interno del menú desplegable */
 }
 
 /*contenido ppal*/
@@ -223,17 +275,6 @@ main.bg-dark {
   align-items: center;
 }
 
-.estrellas {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1em;
-}
-
-.estrellas img {
-  width: 20px;
-  height: 20px;
-}
-
 .service-icon {
   width: 80%;
   height: 60%;
@@ -268,6 +309,23 @@ main.bg-dark {
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.error-message {
+  display: none;
+}
+
+.enviado{
+  text-align: center;
+  margin: auto;
+  display: none;
+  border:#2f86c0 4px solid;
+  padding: 1em;
+  border-radius: 5px;
+  color: white;
+  width: 60%;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 #btnSubir {

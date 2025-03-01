@@ -42,12 +42,14 @@
     <!-- Cabecera con menú de navegación -->
     <header class="p-3 text-bg-dark" id="principal">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Logo a la izquierda -->
-          <a class="navbar-brand" href="#">
-            <img src="./img/logotipo.jpg" alt="Logo" width="100" class="logo" />
+        <div
+          class="container-fluid d-flex flex-wrap flex-lg-nowrap align-items-center"
+          id="menu"
+        >
+          <!-- Logo -->
+          <a class="navbar-brand me-lg-4" href="index.html">
+            <img src="./img/logotipo.png" alt="Logo" width="100" class="logo" />
           </a>
-
           <!-- Botón de menú (para pantallas pequeñas) -->
           <button
             class="navbar-toggler"
@@ -57,15 +59,19 @@
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            id="boton-menu"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <!-- Enlaces-->
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse navbar-collapse-right"
+            id="navbarNav"
+          >
             <ul class="navbar-nav ms-auto">
               <!-- ms-auto alinea los enlaces a la derecha -->
-              <li class="nav-item">
+              <li class="nav-item text-primary">
                 <a class="nav-link" href="login.html">Iniciar Sesión</a>
               </li>
               <li class="nav-item">
@@ -81,7 +87,7 @@
     </header>
     <!--cuerpo de página-->
 
-    <main class="bg-dark text-white p-4">
+    <main class="bg-dark text-white p-0 pb-3 p-md-4 p-lg-4">
       <!--saltar al contenido ppal-->
       <a class="salto" href="#principal">Ir al contenido principal</a>
       <!-- Slider de trabajos realizados -->
@@ -414,7 +420,7 @@
 
       <!-- Formulario de contacto -->
       <section class="bg-dark text-white p-4 mt-2" id="contacto">
-        <div class="container">
+        <div class="container" id="formulario-contacto">
           <h2 class="text-center mb-4">Contacta con nosotros</h2>
           <form action="#" method="post">
             <div class="row justify-content-center">
@@ -428,6 +434,9 @@
                     name="nombre"
                     placeholder="Escribe aquí tu nombre"
                   />
+                  <div class="error-message">
+                    Este campo no puede quedar vacío
+                  </div>
                 </div>
                 <div class="form-group mb-3" id="form-group">
                   <label for="email">Correo electrónico</label>
@@ -438,6 +447,9 @@
                     name="email"
                     placeholder="Escribe aquí tu correo electrónico"
                   />
+                  <div class="error-message">
+                    Este campo no puede quedar vacío
+                  </div>
                 </div>
                 <div class="form-group mb-3" id="form-group">
                   <label for="telefono">Teléfono</label>
@@ -448,6 +460,9 @@
                     name="telefono"
                     placeholder="Escribe aquí tu teléfono"
                   />
+                  <div class="error-message">
+                    Este campo no puede quedar vacío
+                  </div>
                 </div>
                 <div class="form-group mb-3" id="form-group">
                   <label for="mensaje">Mensaje</label>
@@ -458,8 +473,16 @@
                     rows="4"
                     placeholder="Escribe aquí tu mensaje"
                   ></textarea>
+                  <div class="error-message">
+                    Este campo no puede quedar vacío
+                  </div>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  id="btn-contacto"
+                  disabled
+                >
                   Enviar
                 </button>
               </div>
@@ -467,6 +490,12 @@
           </form>
         </div>
       </section>
+      <div class="enviado">
+        <p>
+          Su mensaje ha sido enviado, nos podremos en contacto con usted lo
+          antes posible. Gracias!!
+        </p>
+      </div>
     </main>
 
     <!-- Pie de página -->
