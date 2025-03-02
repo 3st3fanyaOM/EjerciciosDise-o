@@ -136,8 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
     $("html, body").animate({ scrollTop: 0 }, "slow"); //cuando lo pulsas sube suavemente
   });
 
-  //comprobacion de campos vacios en login
-  $("input").on("blur", function () {
+  //comprobacion de campos vacios en login y contacto
+  $("input, textarea").on("blur", function () {
     console.log("test");
     if ($(this).val().trim() === "") {
       $(this).css({
