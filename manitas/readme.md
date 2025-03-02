@@ -73,15 +73,15 @@
 
 - **Comprobación de contraste**
 
-  ![alt text](image.png)
+  ![alt text](./img/image.png)
 
 - **Comprobación accesibilidad**
 
 - Index
-  ![alt text](image-1.png)
+  ![alt text](./img/image-1.png)
 
 - Login
-  ![alt text](image-2.png)
+  ![alt text](./img/image-2.png)
 
 - Registro
-  ![alt text](image-3.png)
+  ![alt text](./img/image-3.png)
